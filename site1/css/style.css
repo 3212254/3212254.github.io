@@ -7,7 +7,7 @@ section .section-title {
 }
 #footer {
     background: url(../img/map.jpg) #4682B4 no-repeat; 
-	background-size: 50%;
+	background-size: 100%;
 	background-position: center center; 
 	padding: 10px 0 10px; 
 	display: block; 
