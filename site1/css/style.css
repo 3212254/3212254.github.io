@@ -7,11 +7,11 @@ section .section-title {
 }
 #footer {
     background: url(../img/map.jpg) #4682B4 no-repeat; 
-	background-size: 100%;
-	background-position: center center; 
-	padding: 10px 0 10px; 
-	display: block; 
-	position: absolute;
+	/* background-size: 100%; */
+    background-position: center center;
+    padding: 100px 0 80px;
+    display: block;
+    position: relative;
 }
 #footer h5{
 	padding-left: 10px;
