@@ -1,0 +1,21 @@
+/* ГАЛЕРЕЯ */
+.live__scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.live__scroll .row{
+  display:block;
+}
+.live__scroll .live__scroll--box {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  float: none;
+  padding: 15px;
+}
+.view img {
+  width: 300px;
+  height: 190px;
+}
+//////////////////
