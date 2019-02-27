@@ -34,6 +34,7 @@
         }
         gtag('js', new Date());
         gtag('config', 'UA-132908948-1');
+
     </script>
     <!-- Yandex.Metrika -->
     <script type="text/javascript">
@@ -53,10 +54,11 @@
             accurateTrackBounce: true,
             webvisor: true
         });
+
     </script>
     <!--Верификация Веб-мастера Яндекс-->
     <meta name="yandex-verification" content="f7033b41e0a0fd81" />
-    
+
 </head>
 
 <body>
@@ -440,30 +442,52 @@
                     <div>Суббота: выходной</div>
                     <div>Воскресенье: выходной</div>
                 </div>
-                
+
                 <!-- Популярные товары -->
-                <div class="col-md-4 col-sm-12 p-3" itemscope itemtype="http://schema.org/ItemList">
-                   
+                <div class="col-md-4 col-sm-12 p-3" itemscope itemtype="http://schema.org/Service">
+
+                    <meta itemprop="serviceType" content="Популярные товары и услуги" />
+
                     <h5 class="popular goods" itemprop="name">Популярные товары и услуги</h5>
-                                        
-                    <link itemprop="itemListOrder" href="http://schema.org/ItemListOrderDescending" />
-                    
-                    <p>1. <span itemprop="itemListElement" position="1">Перекидная система на 4 кармана</span></p>
-                    <p>2. <span itemprop="itemListElement">Вывеска с объемными буквами</span></p>
-                    <p>3. <span itemprop="itemListElement">Баннер</span></p>
-                    <p>4. <span itemprop="itemListElement">Адресная табличка</span></p>
-                    <p>5. <span itemprop="itemListElement">Наклейка на холодильник</span></p>
-                    
+
+                    <ul itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+
+
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name"> Перекидная система на 4 кармана </span>
+                        </li>
+
+
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name"> Вывеска с объемными буквами </span>
+                        </li>
+
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name"> Баннер </span>
+                        </li>
+
+
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name"> Адресная табличка </span>
+                        </li>
+
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name"> Наклейка на холодильник </span>
+                        </li>
+
+                    </ul>
+
                 </div>
                 <!-- Реквизиты -->
                 <div class="col-md-4 col-sm-12 p-3">
                     <h5 class="requisites">Наши реквизиты</h5>
                     <div itemscope itemtype="http://schema.org/Organization">
-                    <span itemprop="name"> ИП Кузьмичев И. П. </span></div>
+                        <span itemprop="name"> ИП Кузьмичев И. П. </span></div>
                     <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="postalCode"> 246000 </ span>
-                    <span itemprop="addressLocality"> г. Гомель </ span>
-                    <span itemprop="streetAddress"> ул. Старо-Черниговская, 15/150 </ span></div>
+                        <span itemprop="postalCode"> 246000 </ span>
+                            <span itemprop="addressLocality"> г. Гомель </ span>
+                                <span itemprop="streetAddress"> ул. Старо-Черниговская, 15/150 </ span>
+                    </div>
                     <link itemscope itemprop="identifier" itemptype="http://schema.org/PropertyValue">
                     <span itemprop="propertyID">УНП</span>:
                     <span itemprop="value">491239855</span>
