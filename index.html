@@ -71,8 +71,13 @@
             <a class="navbar-brand" href="#"><img class="animated infinite flip slow" alt="logo" height="30" src="https://images.by.prom.st/73834733_w0_h120_logo.png" width="70"></a>
 
             <div class="contact">
-                <a href="tel:+375293846866" style="color: #C0C0C0"><i class="fa fa-phone"></i> +375 29 384 68 66</a>
-                <br><a href="mailto:yana_80301@mail.ru" style="color: #C0C0C0"><i class="fa fa-at"></i> yana_80301@mail.ru</a>
+               <div itemscope itemtype="http://schema.org/Organization">
+               
+                <a href="tel:+375293846866" style="color: #C0C0C0"><i class="fa fa-phone"></i><span itemprop="telephone"> +375 29 384 68 66</span></a>
+                
+                <br><a href="mailto:yana_80301@mail.ru" style="color: #C0C0C0"><i class="fa fa-at"></i><span itemprop="email"> yana_80301@mail.ru</span></a>
+                
+                </div>
             </div>
 
             <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
@@ -419,24 +424,25 @@
                 <!-- Режим работы -->
                 <div class="col-md-4 col-sm-12 p-3">
                     <h5 class="working hours">Режим работы</h5>
-                    <div itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
-                        <link itemprop="dayOfWeek" href="http://schema.org/Monday" />Понедельник:
+                    <div itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                       
+                        <span itemprop="dayOfWeek"><link href="http://schema.org/Monday"/>Понедельник</span>:
                         <time itemprop="opens" content="09:00:00"> 9:00</time> -
-                        <time itemprop="closes" content="18:00:00">18:00</time></div>
-                    <div itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
-                        <link itemprop="dayOfWeek" href="http://schema.org/Tuesday" />Вторник:
+                        <time itemprop="closes" content="18:00:00">18:00</time>
+                    
+                        <span itemprop="dayOfWeek"><link href="http://schema.org/Tuesday"/>Вторник</span>:
                         <time itemprop="opens" content="09:00:00"> 9:00</time> -
-                        <time itemprop="closes" content="18:00:00">18:00</time></div>
-                    <div itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
-                        <link itemprop="dayOfWeek" href="http://schema.org/Wednesday" />Среда:
+                        <time itemprop="closes" content="18:00:00">18:00</time>
+                    
+                        <span itemprop="dayOfWeek"><link href="http://schema.org/Wednesday"/>Среда</span>:
                         <time itemprop="opens" content="09:00:00"> 9:00</time> -
-                        <time itemprop="closes" content="18:00:00">18:00</time></div>
-                    <div itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
-                        <link itemprop="dayOfWeek" href="http://schema.org/Thursday" />Четверг:
+                        <time itemprop="closes" content="18:00:00">18:00</time>
+                    
+                        <span itemprop="dayOfWeek"><link href="http://schema.org/Thursday"/>Четверг</span>:
                         <time itemprop="opens" content="09:00:00"> 9:00</time> -
-                        <time itemprop="closes" content="18:00:00">18:00</time></div>
-                    <div itemprop="openingHoursSpecification" itemtype="http://schema.org/OpeningHoursSpecification">
-                        <link itemprop="dayOfWeek" href="http://schema.org/Friday" />Пятница:
+                        <time itemprop="closes" content="18:00:00">18:00</time>
+                    
+                        <span itemprop="dayOfWeek"><link href="http://schema.org/Friday"/>Пятница</span>:
                         <time itemprop="opens" content="09:00:00"> 9:00</time> -
                         <time itemprop="closes" content="18:00:00">18:00</time></div>
                     <div>Суббота: выходной</div>
@@ -487,20 +493,21 @@
                     <div itemscope itemtype="http://schema.org/Organization">
                         <span itemprop="name"> ИП Кузьмичев И. П. </span></div>
                         
-                    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <div itemscope itemtype="http://schema.org/PostalAddress">
                         <span itemprop="postalCode"> 246000 </span>
                         <span itemprop="addressLocality"> г. Гомель </span>
                         <span itemprop="streetAddress"> ул. Старо-Черниговская, 15/150 </span></div>
                     
-                    <link itemscope itemprop="identifier" itemptype="http://schema.org/PropertyValue">
+                    <div itemscope itemptype="http://schema.org/PropertyValue">
                         <span itemprop="propertyID">УНП</span>:
-                        <span itemprop="value">491239855</span>
+                        <span itemprop="value">491239855</span></div>
 
                     <br>р/с: BY34 BPSB 3013 1783 8301 0933 0000
                     <br>ОАО «БПС-Сбербанк» г. Гомель, ул. Крестьянская, 29а
                     <br>БИК BPSBBY2X
 
                 </div>
+                
             </div>
             <!-- Копирайт -->
             <div class="row">
