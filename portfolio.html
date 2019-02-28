@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
 
@@ -73,7 +72,6 @@
     </script>
 
 </head>
-
 <body>
 
     <!--НАВИГАЦИЯ-->
@@ -154,93 +152,68 @@
     </div>
 
     <!-- ФУТЕР -->
-    <footer class="footer bg-dark" style="padding: 10px 0 0;">
+    <footer class="footer bg-dark">
         <div class="container" style="color: #C0C0C0">
             <div class="row">
                 <!-- Режим работы -->
-                <div class="col-md-4 col-sm-12 p-3">
-                    <h5>Режим работы</h5>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>День</th>
-                                <th>Время работы</th>
-                            </tr>
-                            <tr>
-                                <td>Понедельник</td>
-                                <td>
-                                    09:00&nbsp;—&nbsp;18:00
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Вторник</td>
-                                <td>
-                                    09:00&nbsp;—&nbsp;18:00
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Среда</td>
-                                <td>
-                                    09:00&nbsp;—&nbsp;18:00
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Четверг</td>
-                                <td>
-                                    09:00&nbsp;—&nbsp;18:00
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Пятница</td>
-                                <td>
-                                    09:00&nbsp;—&nbsp;18:00
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Суббота</td>
-                                <td>
-                                    Выходной
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Воскресенье</td>
-                                <td>
-                                    Выходной
-
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="col-md-3 col-sm-12 p-3">
+                    <h5 class="working hours">Режим работы</h5>
+                    <div itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+                        <div><span itemprop="dayOfWeek"><link href="http://schema.org/Monday"/>Понедельник</span>:
+                        <time itemprop="opens" content="09:00:00"> 9:00</time> -
+                        <time itemprop="closes" content="18:00:00">18:00</time></div>
+                        <div><span itemprop="dayOfWeek"><link href="http://schema.org/Tuesday"/>Вторник</span>:
+                        <time itemprop="opens" content="09:00:00"> 9:00</time> -
+                        <time itemprop="closes" content="18:00:00">18:00</time></div>
+                        <div><span itemprop="dayOfWeek"><link href="http://schema.org/Wednesday"/>Среда</span>:
+                        <time itemprop="opens" content="09:00:00"> 9:00</time> -
+                        <time itemprop="closes" content="18:00:00">18:00</time></div>
+                        <div><span itemprop="dayOfWeek"><link href="http://schema.org/Thursday"/>Четверг</span>:
+                        <time itemprop="opens" content="09:00:00"> 9:00</time> -
+                        <time itemprop="closes" content="18:00:00">18:00</time></div>
+                        <div><span itemprop="dayOfWeek"><link href="http://schema.org/Friday"/>Пятница</span>:
+                        <time itemprop="opens" content="09:00:00"> 9:00</time> -
+                        <time itemprop="closes" content="18:00:00">18:00</time></div></div>
+                    <div>Суббота: выходной</div>
+                    <div>Воскресенье: выходной</div>
                 </div>
                 <!-- Популярные товары -->
-                <div class="col-md-4 col-sm-12 p-3">
-                    <h5>Популярные товары и услуги</h5>
-                    <ul class="list-unstyled quick-links">
-                        <li> Перекидная система на 4 кармана</li>
-                        <li> Вывеска с объемными буквами</li>
-                        <li> Баннер</li>
-                        <li> Адресная табличка</li>
-                        <li> Наклейка на холодильник</li>
+                <div class="col-md-4 col-sm-12 p-3" itemscope itemtype="http://schema.org/Service">
+                    <meta itemprop="serviceType" content="Популярные товары и услуги" />
+                    <h5 class="popular goods" itemprop="name">Популярные товары и услуги</h5>
+                    <ul class="list-unstyled quick-links" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name"> Перекидная система на 4 кармана </span>
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name"> Вывеска с объемными буквами </span>
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name"> Баннер </span>
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name"> Адресная табличка </span>
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <span itemprop="name"> Наклейка на холодильник </span>
+                        </li>
                     </ul>
-
                 </div>
                 <!-- Реквизиты -->
-                <div class="col-md-4 col-sm-12 p-3">
-                    <h5>Наши реквизиты</h5>
-                    <p>
-                        ИП Кузьмичев И. П.
-                        <br>246000, г. Гомель ул. Старо-Черниговская, 15/150
-                        <br>УНП 491239855
-                        <br>BY34 BPSB 3013 1783 8301 0933 0000
-                        <br>ОАО «БПС-Сбербанк» г. Гомель, ул. Крестьянская, 29а
-                        <br>БИК BPSBBY2X
-                    </p>
+                <div class="col-md-5 col-sm-12 p-3">
+                    <h5 class="requisites">Наши реквизиты</h5>
+                    <div itemscope itemtype="http://schema.org/Organization">
+                        <span itemprop="name"> ИП Кузьмичев И. П. </span></div>
+                    <div itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="postalCode"> 246000 </span>
+                        <span itemprop="addressLocality"> г. Гомель </span>
+                        <span itemprop="streetAddress"> ул. Старо-Черниговская, 15/150 </span></div>
+                    <div itemscope itemptype="http://schema.org/PropertyValue">
+                        <span itemprop="propertyID">УНП</span>:
+                        <span itemprop="value">491239855</span></div>
+                    <div>р/с: BY34 BPSB 3013 1783 8301 0933 0000 <br>
+                    ОАО «БПС-Сбербанк» г. Гомель, ул. Крестьянская, 29а <br>
+                    БИК BPSBBY2X</div>
                 </div>
             </div>
             <!-- Копирайт -->
@@ -253,16 +226,20 @@
         </div>
     </footer>
 
-
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/52489468" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+    </script>
     <!-- Скрипты -->
-    <script src="js/script.js"></script>
-
+    <script src="js/script.js">
+    </script>
 </body>
-
 </html>
+
