@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: 
-Sitemap: 3212254.github.io/sitemap.xml
+Allow: /
+
+Sitemap: https://3212254.github.io/sitemap.xml

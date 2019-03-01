@@ -1,1 +1,4 @@
-﻿Redirect 301 / https://3212254.github.io/
+﻿Options +FollowSymlinks
+RewriteEngine on
+rewritecond %{http_host} ^https://3212254.github.io/ [nc]
+rewriterule ^(.*)$ http://www.https://3212254.github.io//$1 [r=301,nc]
