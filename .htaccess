@@ -1,2 +1,1 @@
-﻿RewriteCond %{HTTP_HOST} ^www\.(.*)$
-RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+﻿Redirect 301 / https://3212254.github.io/
