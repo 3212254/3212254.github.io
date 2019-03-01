@@ -1,4 +1,3 @@
-﻿Options +FollowSymlinks
-RewriteEngine on
-rewritecond %{http_host} ^https://3212254.github.io/ [nc]
-rewriterule ^(.*)$ http://www.https://3212254.github.io//$1 [r=301,nc]
+﻿RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.3212254.github.io$ [NC]
+RewriteRule ^(.*)$ http://3212254.github.io/$1 [R=301,L]
