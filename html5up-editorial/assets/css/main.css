@@ -1,38 +1,13 @@
-.col-xs-1-5,
-.col-sm-1-5,
-.col-md-1-5,
-.col-lg-1-5 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
- 
-.col-xs-1-5 {
-  width: 20%;
-  float: left;
-}
- 
-@media (min-width: 768px) {
-  .col-sm-1-5 {
-    width: 20%;
-    float: left;
-  }
-}
- 
-@media (min-width: 992px) {
-  .col-md-1-5 {
-    width: 20%;
-    float: left;
-  }
-}
- 
-@media (min-width: 1200px) {
-  .col-lg-1-5 {
-    width: 20%;
-    float: left;
-  }
-}
+h1, h2, h3, h4, h5, h6, ul, li, p, span{
+            color: aliceblue;
+            font-family: 'Comfortaa', cursive;
+        }
+
+
+
+/* Иконки на главной */
+
+
 
 /* Галерея на главной */
 .live__scroll {
@@ -61,17 +36,17 @@
 
 /* Wrapper */
 
-	#wrapper {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: row-reverse;
-		-webkit-flex-direction: row-reverse;
-		-ms-flex-direction: row-reverse;
-		flex-direction: row-reverse;
-		min-height: 100vh;
-	}
+#wrapper {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: row-reverse;
+	-webkit-flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+	min-height: 100vh;
+}
 
 /* Sidebar */
 
@@ -309,13 +284,13 @@
 		-ms-user-select: none;
 		user-select: none;
 		color: #3d4449;
-		font-family: "Roboto Slab", serif;
+		font-family: 'Comfortaa', cursive;
 		font-family: 400;
 		letter-spacing: 0.075em;
 		list-style: none;
 		margin-bottom: 0;
 		padding: 0;
-		text-transform: uppercase;
+		
 	}
 
 		#menu ul a, #menu ul span {
@@ -328,7 +303,7 @@
 		}
 
 			#menu ul a:hover, #menu ul span:hover {
-				color: #f56a6a;
+				color: ;
 			}
 
 			#menu ul a.opener, #menu ul span.opener {
@@ -366,7 +341,7 @@
 				}
 
 				#menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
-					color: #f56a6a;
+					color: ;
 				}
 
 				#menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
@@ -387,7 +362,7 @@
 	}
 
 		#menu > ul > li > ul {
-			color: #9fa3a6;
+			color: ;
 			display: none;
 			margin: 0.5em 0 1.5em 0;
 			padding-left: 1em;

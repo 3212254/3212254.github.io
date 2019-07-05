@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Host: reklamnik.by/
+Sitemap: https://reklamnik.by/sitemap.xml

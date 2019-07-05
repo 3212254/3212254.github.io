@@ -1,0 +1,15 @@
+# One year for image files
+<filesMatch ".(jpg|jpeg|png|gif|ico|webp)$">
+Header set Cache-Control "max-age=2629000, public"
+</filesMatch>
+# One month for css and js
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^http://reklamnik.by$ [NC]
+RewriteRule ^(.*)$ http://reklamnik.by/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
