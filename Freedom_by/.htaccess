@@ -7,9 +7,8 @@ Header set Cache-Control "max-age=2629000, public"
 Header set Cache-Control "max-age=604800, public"
 </filesMatch>
 
-RewriteEngine on
-RewriteCond %{HTTP_HOST} !^http://reklamnik.by$ [NC]
-RewriteRule ^(.*)$ http://reklamnik.by/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
 
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]

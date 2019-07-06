@@ -1,12 +1,14 @@
-﻿RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.3212254.github.io$ [NC]
-RewriteRule ^(.*)$ http://3212254.github.io/$1 [R=301,L]
-
 # One year for image files
-<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+<filesMatch ".(jpg|jpeg|png|gif|ico|webp)$">
 Header set Cache-Control "max-age=2629000, public"
 </filesMatch>
 # One month for css and js
 <filesMatch ".(css|js)$">
 Header set Cache-Control "max-age=604800, public"
 </filesMatch>
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
