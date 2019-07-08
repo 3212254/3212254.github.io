@@ -1,0 +1,41 @@
+#main {
+    background-color: #2a2c36; 
+    color: #d9dada; 
+    font-family: 'Century Gothic'; 
+    font-weight: normal; 
+    font-style: normal; 
+    overflow-x:hidden;
+}
+
+h2, h6{
+    color: #5ac1d4;
+    text-align: center
+}
+
+.icon {
+    color: #c7e8fb;
+}
+
+/* Галерея на главной */
+.live__scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.live__scroll .row {
+    display: block;
+}
+
+.live__scroll .live__scroll--box {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    float: none;
+    padding: 15px;
+}
+
+.view img {
+    width: 300px;
+    height: 190px;
+}
