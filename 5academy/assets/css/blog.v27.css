@@ -1,4 +1,29 @@
-.slider {
+/* Галерея на главной */
+.live__scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.live__scroll .row {
+    display: block;
+}
+
+.live__scroll .live__scroll--box {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    float: none;
+    padding: 15px;
+}
+
+.view img {
+    width: 300px;
+    height: 190px;
+} 
+
+///////////////////////////////////////////////////////////////
+.slider { 
     position: relative
 }
 
@@ -51,7 +76,7 @@
 }
 
 .slider__control--inverted span {
-    background-color: #fff
+    background-color: #2a2c36
 }
 
 .slider__control--inverted.slider__control--active span::before {
@@ -75,7 +100,7 @@
     width: 11px;
     height: 11px;
     margin: auto;
-    background-color: #fff;
+    background-color: #2a2c36;
     border-radius: 50%
 }
 
@@ -798,8 +823,8 @@
 }
 
 .blog-section--black-striped {
-    background-color: #302683;
-    background-image: repeating-linear-gradient(150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px), repeating-linear-gradient(-150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px);
+    background-color: #2a2c36; /*изменил фон и убрал сетку в мобильной версии*/
+    background-image: ;
     background-size: 82px 47px
 }
 
@@ -816,7 +841,7 @@
 }
 
 .blog-section--black-striped .blog-section__content::before {
-    background-color: #302683;
+    background-color: #2a2c36; /*фон с синего на серый там где было видео*/
     width: 300%;
     background-repeat: repeat
 }
@@ -3965,7 +3990,7 @@ a.post-content__recommend-image {
     }
 
     .blog-section--black-striped .blog-section__content::before {
-        background-image: repeating-linear-gradient(150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px), repeating-linear-gradient(-150deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .06) 1px, transparent 0, transparent 41px);
+        background-image: ; /*убрал сетку с фона*/
         background-size: 82px 47px;
         display: block;
         padding-top: 15px

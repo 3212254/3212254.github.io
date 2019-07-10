@@ -1,4 +1,4 @@
-@keyframes rotation {
+@keyframes rotation { 
     0% {
         transform: rotate(0deg)
     }
@@ -1121,8 +1121,8 @@ a:focus {
 .page-header {
     z-index: 11;
     min-height: 60px;
-    color: #fff;
-    background-color: #2d2d44
+    color: #d9dada;
+    background-color: #2a2c36
 }
 
 .page-header:hover {
@@ -1292,7 +1292,6 @@ a:focus {
     margin: 0;
     padding: 0;
     list-style: none;
-    list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)
 }
 
 .main-nav__list--main .main-nav__item {
@@ -4580,7 +4579,7 @@ input:checked ~ .radio-block__body {
     }
 
     .main-nav__list--main {
-        flex: 0 1 auto
+        flex: 1 1 auto /*равномерное разложение в верхней полоске*/
     }
 
     .main-nav__list--user {
