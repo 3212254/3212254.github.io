@@ -3,9 +3,15 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
-body {
+body { 
   overflow-x: hidden;
+    font-family: 'Century Gothic'; 
+    font-weight: normal; 
+    font-style: normal;
+    background-color: #2a2c36;
+    color: #d9dada;
 }
+
 
 #sidebar-wrapper {
   min-height: 100vh;
