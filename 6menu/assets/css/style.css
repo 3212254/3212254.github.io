@@ -1,78 +1,100 @@
-body { 
-    font-family: 'Century Gothic'; 
-    font-weight: normal; 
-    font-style: normal; 
+
+
+/* Прячем элементы при уменьшении экрана */
+@media only screen and (max-width: 700px) {
+    #icon {
+        display: none;
+    }
 }
 
-/*ВЕРТИКАЛЬНОЕ МЕНЮ*/ 
+
+
+/* Убираем маркеры */
+li {
+    list-style-type: none; 
+}
+
+ul {
+    margin-left: 0;
+    /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+
+
+
+/*ВЕРТИКАЛЬНОЕ МЕНЮ*/
 html {
     position: relative;
     min-height: 100%;
 }
 
 body {
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #2a2c36;
+    color: #d9dada;
     padding-top: 4.5rem;
     margin-bottom: 4.5rem;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3.5rem;
-  line-height: 3.5rem;
-  background-color: #ccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .nav-link:hover {
-  transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 .nav-link-collapse:after {
-  float: right;
-  content: '\f067';
-  font-family: 'FontAwesome';
+    float: right;
+    content: '\f067';
+    font-family: 'FontAwesome';
 }
 
 .nav-link-show:after {
-  float: right;
-  content: '\f068';
-  font-family: 'FontAwesome';
+    float: right;
+    content: '\f068';
+    font-family: 'FontAwesome';
 }
 
 .nav-item ul.nav-second-level {
-  padding-left: 0;
+    padding-left: 0;
 }
 
 .nav-item ul.nav-second-level > .nav-item {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 @media (min-width: 992px) {
-  .sidenav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 230px;
-    height: calc(100vh - 3.5rem);
-    margin-top: 3.5rem;
-    background: #343a40;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
-  }
+    .sidenav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 230px;
+        height: calc(100vh - 3.5rem);
+        margin-top: 3.5rem;
+        background: #343a40;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
 
-  .navbar-expand-lg .sidenav {
-    flex-direction: column;
-  }
+    .navbar-expand-lg .sidenav {
+        flex-direction: column;
+    }
 
-  .content-wrapper {
-    margin-left: 230px;
-  }
+    .content-wrapper {
+        margin-left: 230px;
+    }
 
-  .footer {
-    width: calc(100% - 230px);
-    margin-left: 230px;
-  }
+    .footer {
+        width: calc(100% - 230px);
+        margin-left: 230px;
+    }
 }
 
 /* Галерея на главной */
