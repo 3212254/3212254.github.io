@@ -17,24 +17,15 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #2a2c36; color: #d9dada;">
 
-        <div class="navbar-nav-scroll container-fluid justify-content-center mx-auto">
-            <ul class="navbar-nav bd-navbar-nav flex-row">
-                <li class="nav-item" id="icon">
-                    <a class="nav-link " href="/" title="В начало"><img src="assets/img/icon/icon_vremya.png" alt=""> пн-пт: 9:00-18:00</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href=""><img src="assets/img/icon/icon_telefon.png" alt=""> +375293846866</a>
-                </li>
-                <li class="nav-item" id="icon">
-                    <a class="nav-link " href=""><img src="assets/img/icon/icon_pochta.png" alt=""> yana_80301@mail.ru</a>
-                </li>
-                <li class="nav-item" id="icon">
-                    <a class="nav-link " href=""><img src="assets/img/icon/icon_mesto.png" alt=""> г. Гомель</a>
-                </li>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000; color: #d9dada;">
+        
+        <div class="navbar-brand">
+            <span id="icon1"><img src="assets/img/icon/icon_vremya.png" alt=""> пн-пт: 9:00-18:00</span>
+            <span><img src="assets/img/icon/icon_telefon.png" alt=""><a href="tel:+375293846866"> +375293846866</a></span>
+            <span id="icon2"><img src="assets/img/icon/icon_pochta.png" alt=""><a href="mailto:yana_80301@mail.ru"> yana_80301@mail.ru</a></span>
+            <span id="icon1"><img src="assets/img/icon/icon_mesto.png" alt=""> г. Гомель</span>
 
-            </ul>
         </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,10 +33,9 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
-
-            <ul class="navbar-nav mr-auto sidenav" id="navAccordion" style="background-color: #2a2c36; color: #d9dada;">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="assets/img/icon/logo.png" width="100" alt=""></a>
+            <ul class="navbar-nav mr-auto sidenav " id="navAccordion" style="background-color: #2a2c36; color: #d9dada;">
+                <li class="nav-item" style="text-align: center;">
+                    <a class="nav-link" href="#" style=""><img src="assets/img/icon/logo.png" width="90" alt=""></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">ГЛАВНАЯ <span class="sr-only">(current)</span></a>
@@ -64,20 +54,57 @@
                                 <span class="nav-link-text">ШИРОКОФОРМАТНАЯ ПЕЧАТЬ</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">ИЗДЕЛИЯ ИЗ ОРГСТЕКЛА</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">НАВИГАЦИОННЫЕ ТАБЛИЧКИ</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">СТЕНДЫ</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">РЕЛАМНЫЕ КОНСТРУКЦИИ</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">АДРЕСНЫЕ ТАБЛИЧКИ</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span class="nav-link-text">НАКЛЕЙКИ НА ХОЛОДИЛЬНИК</span>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">ПОРТФОЛИО</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#">ВОПРОСЫ-ОТВЕТЫ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О НАС</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">КОНТАКТЫ</a>
                 </li>
             </ul>
+
         </div>
+
     </nav>
 
     <main class="content-wrapper">
-
         <div class="container-fluid">
             <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
                 <ol class="carousel-indicators">
@@ -101,39 +128,20 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid" style="text-align: center;">
             <div class="row">
 
-                <div class="col-6"><span><img src="assets/img/icon/7.png" alt=""> 7 ЛЕТ УСПЕШНОЙ РАБОТЫ</span></div>
+                <div class="col-12 col-sm-6 col-lg-3" style="display: flex;"><img src="assets/img/icon/7.png" alt=""><p style="text-align: center;"> 7 ЛЕТ<br> УСПЕШНОЙ <br>РАБОТЫ</p></div>
 
-                <div class="col-6"><span><img src="assets/img/icon/garantiya.png" alt=""> ЛУЧШЕЕ СООТНОШЕНИЕЦЕНЫ И КАЧЕСТВА</span></div>
+                <div class="col-12 col-sm-6 col-lg-3" style="display: flex;"><img src="assets/img/icon/garantiya.png" alt=""><span> ЛУЧШЕЕ <br> СООТНОШЕНИЕ<br>ЦЕНЫ И КАЧЕСТВА</span></div>
 
-                <div class="col-6"><img src="assets/img/icon/sotrudniki.png" alt=""><span> ОПЫТНЫЕ СПЕЦИАЛИСТЫ</span></div>
+                <div class="col-12 col-sm-6 col-lg-3" style="display: flex;"><img src="assets/img/icon/sotrudniki.png" alt=""><span> ОПЫТНЫЕ<br> СПЕЦИАЛИСТЫ</span></div>
 
-                <div class="col-6"><img src="assets/img/icon/500.png" alt=""><span> ДОВОЛЬНЫХ КЛИЕНТОВ</span></div>
-
+                <div class="col-12 col-sm-6 col-lg-3" style="display: flex;"><img src="assets/img/icon/500.png" alt=""><span> ДОВОЛЬНЫХ <br>КЛИЕНТОВ</span></div>
 
             </div>
-        </div>
-        
-        <div class="container-fluid"><div class="navbar-nav-scroll">
-            <ul class="navbar-nav bd-navbar-nav flex-row">
-                <li class="nav-item">
-                    <a class="nav-link " href="/" title="В начало"><img src="assets/img/icon/icon_vremya.png" alt=""> пн-пт: 9:00-18:00</a>
-                </li>
-                <li class="nav-item" id="icon">
-                    <a class="nav-link" href=""><img src="assets/img/icon/icon_telefon.png" alt=""> +375293846866</a>
-                </li>
-                <li class="nav-item" id="icon">
-                    <a class="nav-link " href=""><img src="assets/img/icon/icon_pochta.png" alt=""> yana_80301@mail.ru</a>
-                </li>
-                <li class="nav-item" id="icon">
-                    <a class="nav-link " href=""><img src="assets/img/icon/icon_mesto.png" alt=""> г. Гомель</a>
-                </li>
 
-            </ul>
         </div>
-</div>
 
         <div class="container-fluid">
             <div>
@@ -246,13 +254,12 @@
 
         </div>
 
-
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="text-center">
-                <span>&copy; Все права защищены. <br> Сайт не является интернет-магазином</span>
+                <span>&copy; Все права защищены. Сайт не является интернет-магазином</span>
             </div>
         </div>
     </footer>

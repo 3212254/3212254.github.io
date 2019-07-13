@@ -2,7 +2,13 @@
 
 /* Прячем элементы при уменьшении экрана */
 @media only screen and (max-width: 700px) {
-    #icon {
+    #icon1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #icon2 {
         display: none;
     }
 }
@@ -31,92 +37,71 @@ html {
 }
 
 body {
+    padding-top: 4.5rem;
+    margin-bottom: 4.5rem;
     font-family: 'Century Gothic';
     font-weight: normal;
     font-style: normal;
     background-color: #2a2c36;
     color: #d9dada;
-    padding-top: 4.5rem;
-    margin-bottom: 4.5rem;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  line-height: 3.5rem;
+    font-size: 15px;
 }
 
 .nav-link:hover {
-    transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .nav-link-collapse:after {
-    float: right;
-    content: '\f067';
-    font-family: 'FontAwesome';
+  float: right;
+  content: '\f067';
+  font-family: 'FontAwesome';
 }
 
 .nav-link-show:after {
-    float: right;
-    content: '\f068';
-    font-family: 'FontAwesome';
+  float: right;
+  content: '\f068';
+  font-family: 'FontAwesome';
 }
 
 .nav-item ul.nav-second-level {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .nav-item ul.nav-second-level > .nav-item {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width: 992px) {
-    .sidenav {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 230px;
-        height: calc(100vh - 3.5rem);
-        margin-top: 3.5rem;
-        background: #343a40;
-        box-sizing: border-box;
-        border-top: 1px solid rgba(0, 0, 0, 0.3);
-    }
+  .sidenav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: calc(100vh - 3.5rem);
+    margin-top: 3.5rem;
+    background: #343a40;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  }
 
-    .navbar-expand-lg .sidenav {
-        flex-direction: column;
-    }
+  .navbar-expand-lg .sidenav {
+    flex-direction: column;
+  }
 
-    .content-wrapper {
-        margin-left: 230px;
-    }
+  .content-wrapper {
+    margin-left: 230px;
+  }
 
-    .footer {
-        width: calc(100% - 230px);
-        margin-left: 230px;
-    }
-}
-
-/* Галерея на главной */
-.live__scroll {
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-.live__scroll .row {
-    display: block;
-}
-
-.live__scroll .live__scroll--box {
-    width: auto;
-    height: auto;
-    display: inline-block;
-    float: none;
-    padding: 15px;
-}
-
-.view img {
-    width: 300px;
-    height: 190px;
+  .footer {
+    width: calc(100% - 230px);
+    margin-left: 230px;
+  }
 }
