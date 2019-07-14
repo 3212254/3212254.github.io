@@ -1,4 +1,6 @@
-
+p {
+    margin-bottom: 0;
+}
 
 /* Прячем элементы при уменьшении экрана */
 @media only screen and (max-width: 576px) {
