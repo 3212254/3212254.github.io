@@ -2,7 +2,7 @@ a {
     color: #d9dada;
 }
 /* Прячем элементы при уменьшении экрана */
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 768px) {
     #icon1 {
         display: none;
     }
