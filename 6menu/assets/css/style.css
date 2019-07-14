@@ -84,7 +84,7 @@ body {
     left: 0;
     width: 230px;
     height: calc(100vh - 3.5rem);
-      overflow-y: auto;
+      /*overflow-y: auto;*/
     margin-top: 3.5rem;
     background: #343a40;
     box-sizing: border-box;
@@ -93,8 +93,6 @@ body {
 
   .navbar-expand-lg .sidenav {
     flex-direction: column;
-    
-     
   }
 
   .content-wrapper {
