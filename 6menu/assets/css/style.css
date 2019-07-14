@@ -1,13 +1,13 @@
 
 
 /* Прячем элементы при уменьшении экрана */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
     #icon1 {
         display: none;
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 768px) {
     #icon2 {
         display: none;
     }
