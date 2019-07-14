@@ -1,16 +1,9 @@
-p {
-    margin-bottom: 0;
+a {
+    color: #d9dada;
 }
-
 /* Прячем элементы при уменьшении экрана */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 350px) {
     #icon1 {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #icon2 {
         display: none;
     }
 }
@@ -46,6 +39,7 @@ body {
     font-style: normal;
     background-color: #2a2c36;
     color: #d9dada;
+    overflow-x:hidden;
 }
 
 .footer {
