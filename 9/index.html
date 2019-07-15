@@ -21,7 +21,7 @@
 
 </head>
 
-<body> 
+<body>
     <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" style="background-color: #2a2c36; color: #d9dada;">
         <ul class="nav navmenu-nav flex-column">
             <li class="nav-item" style="text-align: center; padding-top: 15px; padding-bottom: 15px;"><a class="nav-link" href="../navmenu/"><img src="img/icon/logo.png" width="150" alt=""></a></li>
@@ -32,24 +32,24 @@
                     <li class="nav-item"><a class="nav-link" href="#">ОБЪЕМНЫЕ БУКВЫ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">СВЕТОВЫЕ КОРОБА</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">БАННЕРЫ</a></li>
-                    
+
                     <li class="nav-item"><a class="nav-link" href="#">НАКЛЕЙКИ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">СТЕНДЫ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">ОФИСНЫЕ ТАБЛИЧКИ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">ИЗДЕЛИЯ ИЗ ОРГСТЕКЛА</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">РЕКЛАМНЫЕ КОНСТРУКЦИИ</a></li>
-                    
+
                     <li class="nav-item"><a class="nav-link" href="#">АДРЕСНЫЕ ТАБЛИЧКИ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">НАКЛЕЙКИ НА ХОЛОДИЛЬНИК</a></li>
                 </ul>
             </li>
-        
+
             <li class="nav-item"><a class="nav-link" href="../navmenu-reveal/">ПОРТФОЛИО</a></li>
             <li class="nav-item"><a class="nav-link" href="../navbar-offcanvas/">ВОПРОСЫ-ОТВЕТЫ</a></li>
             <li class="nav-item"><a class="nav-link" href="../navmenu-reveal/">О НАС</a></li>
             <li class="nav-item"><a class="nav-link" href="../navbar-offcanvas/">КОНТАКТЫ</a></li>
         </ul>
-        
+
     </div>
 
     <header class="navbar navbar-dark fixed-top hidden-md hidden-lg" style="background-color: #2a2c36; color: #d9dada;">
@@ -115,6 +115,8 @@
 
         </div>
 
+        
+
         <div class="gallery">
             <div>
                 <h2 style="color: #5ac1d4; font-size: 25px; margin-bottom: 10px; text-align: center; margin-top: 30px;">НАШИ РАБОТЫ</h2>
@@ -163,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-3 col-4" style="padding: inherit">
                         <div class="card rounded-0">
                             <div class="card-body">
@@ -227,12 +229,56 @@
 
         </div>
         
-        
-
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d155637.89422865602!2d30.991949299999998!3d52.445775100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1550609772436" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-           
+        <div class="content">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-8a9a5ec4-40c7-4b57-a534-34a09bc7ece1"></div>
         </div>
+        
+        <div class="row">
+           
+           
+            <div class="col-lg-6 mb-4">
+                <h3>Напишите нам</h3>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Ваше имя:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Номер телефона:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Сообщение:</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary" id="sendMessageButton">Отправить</button>
+                </form>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d155637.89422865602!2d30.991949299999998!3d52.445775100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1550609772436" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+
+        </div>
+
+        
     </main>
 
     <footer class="footer">
@@ -243,7 +289,7 @@
         </div>
     </footer>
 
-   
+
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
