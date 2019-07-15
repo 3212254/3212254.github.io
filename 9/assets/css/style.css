@@ -20,3 +20,4 @@ body {
 	background-color: #2a2c36;
 }
 
+ .navmenu-default .navmenu-nav li a:hover, a:active { color: white; }
