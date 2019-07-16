@@ -5,6 +5,8 @@ body {
     background-color: #2a2c36;
     color: #d9dada;
     overflow-x: hidden;
+    min-height:100%;
+    position:relative;
 }
 
 .navmenu-default .navmenu-nav > .active > a, .navbar-default .navbar-offcanvas .navmenu-nav > .active > a, .navmenu-default .navmenu-nav > .active > a:hover, .navbar-default .navbar-offcanvas .navmenu-nav > .active > a:hover, .navmenu-default .navmenu-nav > .active > a:focus, .navbar-default .navbar-offcanvas .navmenu-nav > .active > a:focus {
@@ -25,4 +27,8 @@ body {
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
+}
+
+.affix {
+      bottom: 0;
 }
