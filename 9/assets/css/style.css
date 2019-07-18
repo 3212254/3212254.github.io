@@ -6,7 +6,7 @@ body {
     color: #d9dada;
     overflow-x: hidden;
     min-height: 100%;
-    position: relative; 
+    position: relative;  
 }
 
 .navmenu-default .navmenu-nav > .active > a,
