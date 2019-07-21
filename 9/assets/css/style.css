@@ -44,8 +44,8 @@ footer {
 }
 
 
-
-.thumb img { 
+/* Страница портфолио */ 
+.thumb img {  
       filter: none; /* IE6-9 */ 
       -webkit-filter: grayscale(0); 
       border-radius:5px; 
@@ -60,3 +60,7 @@ footer {
     .thumb { 
       padding:5px; 
     } 
+
+
+/*  */ 
+ 
