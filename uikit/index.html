@@ -17,7 +17,7 @@
        
         <header>
            
-            <div class="uk-navbar uk-background-muted uk-visible@m">
+            <div id="contact" class="uk-navbar uk-background-muted uk-visible@m">
                 <div class="uk-container uk-navbar" uk-navbar>
                     <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav">
@@ -98,9 +98,48 @@
                                 <li><a href="#">КОНТАКТЫ</a></li>
                                 <li><a href="#">О НАС</a></li>
                                 <li>
-                                    <a href="#">
-                                        <button class="uk-button uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default" style="background-color: #F6BB19">ЗАКАЗАТЬ</button>
-                                        <div id="modal-close-default" uk-modal>
+                                    <a href="#modal-full" uk-toggle><button class="uk-button uk-margin-small-right" type="button" style="background-color: #F6BB19">ЗАКАЗАТЬ</button></a>
+                                    <div id="modal-full" class="uk-modal-full" uk-modal>
+                                        <div class="uk-modal-dialog">
+                                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                                <div class="uk-background-cover" style="background-image: url('img/about/tomas.jpg');" uk-height-viewport></div>
+                                                <div class="uk-padding-large">
+                                                    <form class="form_1 uk-width-1-2@m uk-margin-auto" action="" method="POST">
+                                                        <fieldset class="uk-fieldset">
+                                                            <legend class="uk-legend uk-text-center">Заголовок формы</legend>
+
+                                                            <input type="hidden" name="Форма" value="1">
+
+                                                            <div class="uk-margin">
+                                                                <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
+                                                            </div>
+                                                            <div class="uk-margin uk-text-center">
+                                                                <button type="submit" class="uk-button uk-button-default">Отправить</button>
+                                                            </div>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                   
+                                    <!--a href="#">
+                                        <button class="uk-button uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default" style="background-color: #F6BB19">ЗАКАЗАТЬ</button>
+                                        <div id="modal-container" class="uk-modal-container" uk-modal>
                                             <div class="uk-modal-dialog uk-modal-body">
                                                 <button class="uk-modal-close-default" type="button" uk-close></button>
                                                 <form class="form_1 uk-width-1-2@m uk-margin-auto" action="" method="POST">
@@ -131,7 +170,7 @@
                                                 </form>
                                             </div>
                                         </div>
-                                    </a>
+                                    </a-->
                                 </li>
                             </ul>
                         </nav>
@@ -189,7 +228,7 @@
                 </div>
             </div>
             
-            <div class="uk-section uk-text-center uk-text-bold">
+            <div id="card" class="uk-section uk-text-center uk-text-bold">
                 <div class="uk-container">
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true">
                         <ul class="uk-slider-items uk-child-width-1-4 uk-grid">
@@ -325,7 +364,6 @@
                         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
                         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
                     </div>
-                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
                 </div>
             </div>
             
@@ -422,6 +460,9 @@
                     </div>
                 </div>
             </div>
+            
+            
+            
             
             <div id="map" class="uk-section uk-section-primary">
                 <div class="uk-container">
