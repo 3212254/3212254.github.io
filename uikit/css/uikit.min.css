@@ -6192,6 +6192,10 @@ iframe.uk-cover {
     background-color: #222
 }
 
+.uk-background-warning {
+    background-color: #F6BB19
+}
+
 .uk-background-contain,
 .uk-background-cover {
     background-position: 50% 50%;
