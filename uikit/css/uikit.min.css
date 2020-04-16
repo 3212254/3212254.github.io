@@ -1671,14 +1671,14 @@ select.uk-form-width-xsmall {
 
 .uk-section {
     box-sizing: border-box;
-    padding-top: 40px;
-    padding-bottom: 40px
+    padding-top: 20px;
+    padding-bottom: 20px
 }
 
 @media (min-width:960px) {
     .uk-section {
-        padding-top: 70px;
-        padding-bottom: 70px
+        padding-top: 20px;
+        padding-bottom: 20px
     }
 }
 
