@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Заголовок</title>
+    <meta name="description" content="Крутой фреймворк UIkit 3">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+
+    <div class="uk-offcanvas-content">
+
+        <header>
+
+            <div id="contact" class="uk-navbar uk-background-muted uk-visible@m">
+                <div class="uk-container uk-navbar" uk-navbar>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <div class="uk-navbar-item"><img src="img/icon/webp/logo-compressor.webp" width="100" alt=""></div>
+                            </li>
+                            <li>
+                                <div class="uk-navbar-item"><img src="img/icon/webp/icon_mesto-compressor.webp" class="uk-padding-small" alt="">
+                                    <div>
+                                        <span class="uk-text-bold">Гомель, ул. Шевченко</span>
+                                        <div class="uk-navbar-subtitle">(въезд в ГПК-9)</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-navbar-item"><img src="img/icon/webp/icon_telefon-compressor.webp" class="uk-padding-small" alt="">
+                                    <div>
+                                        <div class="uk-text-bold">+375 29 384 68 66</div>
+                                        <div class="uk-navbar-subtitle">yana_80301@mail.ru</div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="uk-navbar-item"><img src="img/icon/webp/icon_vremya-compressor.webp" class="uk-padding-small" alt="">
+                                    <div>
+                                        <div class="uk-text-bold">пн-пт: 9:00-18:00</div>
+                                        <div class="uk-navbar-subtitle">сб-вс: выходной</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu" class="uk-navbar uk-background-primary" uk-sticky="cls-active: navbar-container-fixed">
+                <div class="uk-container uk-navbar" uk-navbar="">
+                    <div class="uk-navbar-right">
+                        <button class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon" uk-toggle="target: #nav-offcanvas" uk-navbar-toggle-icon=""></button>
+                        <nav class="uk-visible@m">
+                            <ul class="uk-navbar-nav">
+                                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                                <li>
+                                    <a href="category.html">ТОВАРЫ И УСЛУГИ
+                                        <span class="uk-margin-xsmall-left uk-icon" uk-icon="icon: chevron-down; ratio: .75;">
+                                        </span>
+                                    </a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-4">
+                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">ВЫВЕСКИ</a></li>
+                                                    <li><a href="#">Объемные буквы</a></li>
+                                                    <li><a href="#">Лайтбоксы</a></li>
+                                                    <li class="uk-active"><a href="#">ШИРОКОФОРМАТНАЯ ПЕЧАТЬ</a></li>
+                                                    <li><a href="#">Баннеры</a></li>
+                                                    <li><a href="#">Наклейки</a></li>
+                                                    <li class="uk-active"><a href="#">ПОС-МАТЕРИАЛЫ</a></li>
+                                                    <li><a href="#">Ценники</a></li>
+                                                    <li><a href="#">Подставки</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">НАВИГАЦИОННЫЕ ТАБЛИЧКИ</a></li>
+                                                    <li><a href="#">Из пластика</a></li>
+                                                    <li><a href="#">Из акрила</a></li>
+                                                    <li class="uk-active"><a href="#">ИНФОРМАЦИОННЫЕ СТЕНДЫ</a></li>
+                                                    <li><a href="#">Настенные</a></li>
+                                                    <li><a href="#">Перекидные</a></li>
+                                                    <li class="uk-active"><a href="#">РЕКЛАМНЫЕ КОНСТРУКЦИИ</a></li>
+                                                    <li><a href="#">Штендер</a></li>
+                                                    <li><a href="#">Ролл ап</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">АДРЕСНЫЕ ТАБЛИЧКИ</a></li>
+                                                    <li><a href="#">Табличка на дом</a></li>
+                                                    <li class="uk-active"><a href="#">ИНТЕРЬЕРНЫЕ НАКЛЕЙКИ</a></li>
+                                                    <li><a href="#">На холодильник</a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="portfolio.html">ПОРТФОЛИО</a></li>
+                                <li><a href="faq.html">ВОПРОС-ОТВЕТ</a></li>
+                                <li><a href="blog.html">СТАТЬИ</a></li>
+                                <li><a href="contact.html">КОНТАКТЫ</a></li>
+                                <li><a href="about.html">О НАС</a></li>
+                                <li>
+                                    <a href="#modal-full" uk-toggle><button class="uk-button uk-margin-small-right" type="button" style="background-color: #F6BB19">ЗАКАЗАТЬ</button></a>
+                                    <div id="modal-full" class="uk-modal-full" uk-modal>
+                                        <div class="uk-modal-dialog">
+                                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                                <div class="uk-background-cover" style="background-image: url('img/about/tomas.jpg');" uk-height-viewport></div>
+                                                <div class="uk-padding-large">
+                                                    <form class="form_1 uk-width-1-2@m uk-margin-auto" action="" method="POST">
+                                                        <fieldset class="uk-fieldset">
+                                                            <legend class="uk-legend uk-text-center">Заголовок формы</legend>
+
+                                                            <input type="hidden" name="Форма" value="1">
+
+                                                            <div class="uk-margin">
+                                                                <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
+                                                            </div>
+                                                            <div class="uk-margin uk-text-center">
+                                                                <button type="submit" class="uk-button uk-button-default">Отправить</button>
+                                                            </div>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-sticky-placeholder" style="height: 61px; margin: 0px;" hidden=""></div>
+
+        </header>
+
+        <main>
+            <div id="breadcrumb" class="uk-section uk-section-muted">
+                <div class="uk-container">
+                    <ul class="uk-breadcrumb">
+                        <li><a href="index.html"><span>Главная</span></a></li>
+                        <li><span>Вопросы и ответы</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-default">
+                <div class="uk-container">
+
+                    <h1>Часто задаваемые вопросы</h1>
+
+                    <ul uk-accordion="collapsible: false">
+                        <li>
+                            <a class="uk-accordion-title uk-text-bold" href="#">Что такое композит?</a>
+                            <div class="uk-accordion-content">
+                                <p>Композит – это один из самых современных и востребованных листовых материалов, отличающийся повышенной прочностью и долговечностью. Композитная панель состоит из двух листов алюминия с термопластичной прослойкой между ними. Композитные панели имеют различную цветовую палитру (RAL), возможна покраска под индивидуальный заказ. В настоящее время композит активно применяется при изготовлении наружной рекламной продукции, а так же подходит для облицовочных работ (вентилируемые фасады).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title uk-text-bold" href="#">Входит ли монтаж в стоимость изготовления наружной или интерьерной рекламы?</a>
+                            <div class="uk-accordion-content">
+                                <p>Нет, не входит. Стоимость монтажа при составлении коммерческого предложения приводится отдельно. Как правило, стоимость монтажа зависит от сложности заказа и длительности проведения работ, но чаще всего монтаж составляет 20% от стоимости заказа, без учета работы спецтехники и подключения.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title uk-text-bold" href="#">А Ваше рекламная компания работает с сетевыми клиентами? А есть ли для сетевиков скидки?</a>
+                            <div class="uk-accordion-content">
+                                <p>Да, мы изготавливаем и обслуживаем вывески сетевых клиентов, оформляем точки внутренней интерьерной рекламой. Заказы «НАМ СРОЧНО!» выполняем безо всяких проблем, так как имеем собственное производство. Для сетевых компаний действует система скидок на все позиции.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title uk-text-bold" href="#">А нам требуется монтаж рекламной конструкции, но т.к. мы находимся в торговом центре, вывеску возможно повесить только после 23.00. Вы производите ночные монтажные работы?</a>
+                            <div class="uk-accordion-content">
+                                <p>Да, мы производим ночные выезды на монтажные работы и проводим монтажи в выходные дни. Запрос на такие работы необходимо сделать как минимум за двое-трое суток до проведения работ, чтобы мы успели оформить все разрешения и получить допуски к работе, согласовав их с административным персоналом торгового центра.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="uk-container uk-margin-top">
+                <div class="uk-margin-top">
+                    <a href="https://www.facebook.com/lednik38/" class="uk-margin-small-right" target="_blank" uk-icon="icon: facebook; ratio: 2"></a>
+                    <a href="https://www.instagram.com/ilia_k38/" class="uk-margin-small-right" target="_blank" uk-icon="icon: instagram; ratio: 2"></a>
+                    <a href="https://goo.gl/maps/KLtup8BoScUgnzgY9" target="_blank" uk-icon="icon: google; ratio: 2"></a>
+                    <span class="uk-margin-left" uk-icon=" ratio: 2">Следите за нами в соцсетях!</span>
+                </div>
+                <p class="uk-text-left">&copy; <a href="https://led-nik.by" target="_blank">Рекламная мастерская Ледник</a> 2016-2020 <br>Сайт не является интернет-магазином </p>
+                <a href="#" uk-totop uk-scroll></a>
+            </div>
+            <img src="img/icon/webp/footer-compressor.webp" width="100%" alt="footer">
+        </footer>
+
+    </div>
+
+    <div id="nav-offcanvas" uk-offcanvas="overlay: true" class="uk-offcanvas">
+        <aside class="uk-offcanvas-bar uk-padding-remove">
+            <div class="uk-card uk-card-small">
+                <header class="uk-card-header uk-flex uk-flex-middle">
+                    <div><a class="uk-link-muted uk-text-bold" href="#">+375 29 384 68 66</a>
+                        <div class="uk-text-xsmall uk-text-muted" style="margin-top: -2px;">
+                            <div>г. Гомель, ул. Шевченко</div>
+                            <div>пн-пт: 9:00–18:00</div>
+                        </div>
+                    </div>
+                </header>
+                <nav class="uk-card-small uk-card-body">
+                    <ul class="uk-nav-default uk-nav-parent-icon uk-list-divider uk-nav" uk-nav="">
+                        <li><a href="blog.html">Главная</a></li>
+                        <li class="uk-parent uk-open"><a href="catalog.html">Товары и услуги</a>
+                            <ul class="uk-nav-sub uk-list-divider" aria-hidden="false">
+                                <li><a href="subcategory.html">Вывески</a></li>
+                                <li><a href="subcategory.html">Баннеры</a></li>
+                                <li><a href="subcategory.html">Стенды</a></li>
+                                <li><a href="subcategory.html">Таблички</a></li>
+                                <li><a href="subcategory.html">Конструкции</a></li>
+                                <li class="uk-text-center"><a class="uk-link-muted uk-text-uppercase tm-link-to-all" href="catalog.html"><span>Смотреть все категории</span><span uk-icon="icon: chevron-right; ratio: .75;" class="uk-icon"></span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Портфолио</a></li>
+                        <li><a href="about.html">Вопрос-ответ</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="compare.html">О нас</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+    </div>
+
+</body>
+
+</html>
