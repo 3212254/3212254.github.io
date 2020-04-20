@@ -8,6 +8,10 @@
     color: aliceblue;
 }
 
+#group p {
+    text-align: center;
+}
+
 /*! UIkit 3.4.0 | https://www.getuikit.com | (c) 2014 - 2020 YOOtheme | MIT License */
 html {
     font-family: 'Century Gothic';
@@ -7501,7 +7505,7 @@ iframe.uk-cover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: max-content;
+    width: 100%;
     max-width: 100%;
     box-sizing: border-box
 }
