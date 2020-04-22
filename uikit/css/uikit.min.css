@@ -2340,7 +2340,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-tile-primary {
-    background: #1e87f0
+    background: #4CAACA
 }
 
 .uk-tile-secondary {
@@ -2447,7 +2447,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-card-primary {
-    background: #1e87f0;
+    background: #4CAACA;
     color: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .08)
 }
@@ -2457,7 +2457,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-card-primary.uk-card-hover:hover {
-    background-color: #1e87f0;
+    background-color: #4CAACA;
     box-shadow: 0 14px 25px rgba(0, 0, 0, .16)
 }
 
@@ -2707,7 +2707,7 @@ select.uk-form-width-xsmall {
 
 .uk-alert-primary {
     background: #d8eafc;
-    color: #1e87f0
+    color: #4CAACA
 }
 
 .uk-alert-success {
@@ -5883,7 +5883,7 @@ ul.uk-nav-sub {
 }
 
 .uk-text-primary {
-    color: #1e87f0 !important
+    color: #4CAACA !important
 }
 
 .uk-text-secondary {
