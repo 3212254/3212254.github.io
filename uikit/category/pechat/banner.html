@@ -120,31 +120,48 @@
                                 <li><a href="../../contact.html">КОНТАКТЫ</a></li>
                                 <li><a href="../../about.html">О НАС</a></li>
                                 <li>
-                                    <a href="#modal-full" uk-toggle><button class="uk-button uk-margin-small-right" type="button" style="background-color: #F6BB19">ЗАКАЗАТЬ</button></a>
-                                    <div id="modal-full" class="uk-modal-full" uk-modal>
-                                        <div class="uk-modal-dialog">
-                                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-                                            <div class="uk-padding-large">
-                                                
-                                                
-                                                <form>
+                                    <a href="#">
+                                        <!-- This is a button toggling the modal with the default close button -->
+                                        <button class="uk-button uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default" style="background-color: #F6BB19">ЗАКАЗАТЬ</button>
+                                        <!-- Это кнопка переключения модального окна с кнопкой закрытия по умолчанию -->
+                                        <div id="modal-close-default" uk-modal>
+                                            <div class="uk-modal-dialog uk-modal-body">
+                                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                <form class="form_1 uk-width-1-2@m uk-margin-auto">
+                                                    <fieldset class="uk-fieldset">
+                                                        <legend class="uk-legend uk-text-center">Отправить сообщение</legend>
+                                                        <!-- Hidden Required Fields -->
+                                                        <input type="hidden" name="project_name" value="Site Name">
+                                                        <input type="hidden" name="admin_email" value="3212254@gmail.com">
+                                                        <input type="hidden" name="form_subject" value="Заказ из меню в баннере">
+                                                        <!-- END Hidden Required Fields -->
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
+                                                        </div>
 
-                                                    <!-- Hidden Required Fields -->
-                                                    <input type="hidden" name="project_name" value="Site Name">
-                                                    <input type="hidden" name="admin_email" value="3212254@gmail.com">
-                                                    <input type="hidden" name="form_subject" value="Form Subject">
-                                                    <!-- END Hidden Required Fields -->
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="bezspama" type="text" placeholder="2+2*2" required>
+                                                        </div>
 
-                                                    <input type="text" name="Name" placeholder="Your name..." required><br>
-                                                    <input type="text" name="E-mail" placeholder="Your E-mail..." required><br>
-                                                    <input type="text" name="Phone" placeholder="Your phone..."><br>
-                                                    <button>Send</button>
-
+                                                        <div class="uk-margin">
+                                                            <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
+                                                        </div>
+                                                        <div class="uk-margin uk-text-center">
+                                                            <button type="submit" class="uk-button uk-button-default">Отправить</button>
+                                                        </div>
+                                                    </fieldset>
                                                 </form>
-                                                
                                             </div>
-                                        </div>
-                                    </div>
+                                        </div></a>
                                 </li>
                             </ul>
                         </nav>
@@ -554,7 +571,7 @@
                                             <!-- Hidden Required Fields -->
                                             <input type="hidden" name="project_name" value="Site Name">
                                             <input type="hidden" name="admin_email" value="3212254@gmail.com">
-                                            <input type="hidden" name="form_subject" value="Form Subject">
+                                            <input type="hidden" name="form_subject" value="Отзыв на баннер">
                                             <!-- END Hidden Required Fields -->
 
                                             <div class="uk-margin">
@@ -578,7 +595,7 @@
                                                 <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
                                             </div>
                                             <div class="uk-margin uk-text-center">
-                                                <button type="submit" class="uk-button uk-button-default" onclick="modal('hide')">Отправить</button>
+                                                <button type="submit" class="uk-button uk-button-default">Отправить</button>
                                             </div>
                                         </fieldset>
                                         
