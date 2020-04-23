@@ -200,7 +200,7 @@
 
         </header>
 
-        <main>
+        <main uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
            
             <div id="breadcrumb" class="uk-section uk-section-muted">
                 <div class="uk-container">
@@ -211,7 +211,7 @@
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../../category.html"><span itemprop="name">Товары и услуги</span></a>
                             <meta itemprop="position" content="2" />
                         </li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../../category/pechat/banner.html"><span itemprop="name">Широкоформатная печать</span></a>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="../../category/pechat.html"><span itemprop="name">Широкоформатная печать</span></a>
                             <meta itemprop="position" content="2" />
                         </li>
                         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">Рекламный баннер</span>
@@ -263,21 +263,21 @@
                 <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
             </div>
             
-            <div class="uk-section uk-section-default">
+            <div id="product" class="uk-section uk-section-default">
                 <div class="uk-container">
 
                     <div class="uk-child-width-1-2@m uk-child-width-1-2@l" uk-height-match=".uk-card-body" uk-grid>
                         <div>
                             <ul class="uk-subnav" uk-switcher>
-                                <li><a href="#"><img src="../../img/pechat/type/banner.jpg" width="50" alt=""></a></li>
+                                <li><a href="#"><img src="../../img/pechat/type/jpeg/banner.jpg" width="50" alt=""></a></li>
                             </ul>
                             <ul class="uk-switcher uk-margin">
-                                <li><img src="../../img/pechat/type/banner.jpg" alt=""></li>
+                                <li><img src="../../img/pechat/type/jpeg/banner.jpg" alt=""></li>
                             </ul>
                         </div>
 
                         <div>
-                            <h1 class="uk-text-left uk-h3">Печать баннеров - изготовление рекламных баннеров</h1>
+                            <h1 class="uk-text-left uk-h2">Печать баннеров - изготовление рекламных баннеров</h1>
                             <div>
                                 <span class="uk-h3 uk-alert-danger">15,00 руб/кв м</span>
                             </div>
@@ -347,7 +347,7 @@
                         <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid">
 
                             <li>
-                                <a class="uk-link-toggle" href="category/pechat/banner.html">
+                                <a class="uk-link-toggle" href="../stendy/rollup.html">
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-media-top">
                                             <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
@@ -365,7 +365,7 @@
                             </li>
 
                             <li>
-                                <a class="uk-link-toggle" href="category/stendy/stend.html">
+                                <a class="uk-link-toggle" href="../stendy/presswall.html">
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-media-top">
                                             <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
@@ -399,40 +399,53 @@
                             <li><a href="#"><p class="uk-h2">Отзывы</p></a></li>
                         </ul>
                         <ul class="uk-switcher uk-margin">
-                            <li>
+                            <li uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
                                     <div class="uk-panel">
                                     <img class="uk-align-center uk-align-right@m uk-margin-remove-adjacent" src="../../img/about/about.jpg" width="225" height="150" alt="Пример изображения">
-                                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
-                                    <p>Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный риторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.</p>
-                                    </div>
-                                    <div class="uk-panel">
-                                    <img class="uk-align-left uk-margin-remove-adjacent" src="../../img/about/tomas.jpg" width="225" height="150" alt="Пример изображения">
-                                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
-                                    <p>Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный риторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.</p>
-                                    </div>
-
                                     <p>Баннеры - любимая маркетинговая среда на все времена, позволяющая продвигать ваши товары или услуги с обеих сторон. Доступные в нестандартных размерах и дизайне, баннеры используются как для бизнеса, так и для личного использования.</p>
                                     <p>Распространите свое сообщение или украсьте свое мероприятие виниловыми баннерами, которые невозможно прогуливать. Мы предлагаем следующие типы баннеров: сетка, ткань или винил для внутреннего и наружного применения.</p>
+                                    </div>
+                                    
+                                    <div class="uk-panel">
+                                    <img class="uk-align-left uk-margin-remove-adjacent" src="../../img/about/tomas.jpg" width="225" height="150" alt="Пример изображения">
                                     <p>Хорошая реклама жизненно важна для успеха в бизнесе. Каждой компании нужна эффективная реклама, чтобы распространять информацию и создавать присутствие бренда. Наружная реклама идеально подходит для этого. Бизнес баннеры являются одними из самых распространенных видов рекламы. Эти знаки могут использоваться как в помещении, так и на улице, и могут легко распространять ваше сообщение.</p>
                                     <p>Front Signs - это компания, занимающаяся рекламными вывесками в Лос-Анджелесе, которая предлагает следующие виды знаков: виниловые, сетчатые и тканевые баннеры. Если вы деловой человек, ищущий хороший рекламный инструмент, или кто-то, кто хочет украсить свое мероприятие, - пользовательские баннеры отлично подойдут на все случаи жизни. Такая реклама, отображаемая в любом месте, сразу привлечет всеобщее внимание. Вы также можете получить тематические украшения для вечеринок: дни рождения, свадьбы, назовите это.</p>
+                                    </div>
+                                    
+                                    <div class="uk-panel">
+                                    <img class="uk-align-center uk-align-right@m uk-margin-remove-adjacent" src="../../img/about/about.jpg" width="225" height="150" alt="Пример изображения">
                                     <p>С помощью уличных баннеров вы можете продвигать свои сильные стороны бизнеса и то, что делает его уникальным.</p>
                                     <p>Широко используемые и доступные в различных размерах и конструкциях, эти три знака могут повысить узнаваемость вашего бренда везде.</p>
                                     <p>Если вы хотите, чтобы к вашей компании относились серьезно, вам необходимо получить профессиональную визуальную идентификацию для вашего бренда. Все три материала очень долговечны, но у них есть свои технические характеристики и специальные конструкции для определенных настроек.</p>
                                     <p>В районах с проблемными погодными условиями - сетчатые рекламные щиты будут отлично работать.</p>
+                                    
+                                    </div>
+                                    
+                                    <div class="uk-panel">
+                                    <img class="uk-align-left uk-margin-remove-adjacent" src="../../img/about/tomas.jpg" width="225" height="150" alt="Пример изображения">
                                     <p>Винил отлично подходит для наружных и внутренних работ, в то время как ткань в основном рекомендуется для внутренних работ. Исследования, проведенные Microsoft, доказывают, что у людей короткий интервал внимания, поэтому у вас есть всего 8 секунд, чтобы привлечь ваших потенциальных клиентов. Таким образом, получите привлекательный знак с яркой графикой и воспользуйтесь возможностью привлечь ваших клиентов.</p>
                                     <p>Повесьте ваши собственные знаки в любом месте с помощью различных подвесных аксессуаров. Рекламные баннеры, напечатанные яркими УФ-чернилами, привлекают внимание всех, даже издалека.</p>
                                     <p>Наши современные принтеры позволяют нам удовлетворять практически любые требования проекта - рекламные акции на окнах, празднования событий, брендинг интерьера и многое другое. Полноцветная система подбора оттенков гарантирует, что ваша графика будет последовательной, впечатляющей и насыщенной.</p>
+                                    </div>
+                                    
+                                    <div class="uk-panel">
+                                    <img class="uk-align-center uk-align-right@m uk-margin-remove-adjacent" src="../../img/about/about.jpg" width="225" height="150" alt="Пример изображения">
                                     <p>Сделанные на заказ баннеры могут поднять вашу бизнес-рекламу на новый уровень. Продвигайте свой бренд, рекламируйте продажи и украшайте свое пространство этой сложной и шикарной графикой.</p>
                                     <p>Являясь одним из ведущих производителей баннеров в Лос-Анджелесе, мы обеспечиваем только высококачественную печать на высокопрочных материалах.</p>
                                     <p>Печать на виниловых баннерах является одним из наиболее широко используемых типов знаков, которые могут быть хорошим активом для достижения ваших деловых целей.</p>
                                     <p>Материал этих больших баннеров - прочный винил, который при надлежащем уходе может прослужить до 3 лет. Идеально подходит как для внутренних, так и для наружных работ.
                                     </p>
+                                    </div>
+                                    
+                                    <div class="uk-panel">
+                                    <img class="uk-align-left uk-margin-remove-adjacent" src="../../img/about/tomas.jpg" width="225" height="150" alt="Пример изображения">
                                     <p>Виниловая печать является единственным типом знаков, которые могут быть двусторонними, обеспечивая большую видимость. Так, например, над дорогой висит двухсторонний рекламный щит, его видят люди в машинах, едущих с обеих сторон дороги.
                                     </p>
                                     <p>Изготовленные на заказ виниловые баннеры в Лос-Анджелесе имеют подшитые края, которые усиливают материал и придают ему большую прочность.
                                     </p>
                                     <p>Часто это можно увидеть на спортивных стадионах с логотипом или девизом команды. Они широко используются в торговых центрах на задней стенке витрин, чтобы информировать о продажах или новой сезонной коллекции. </p>
-                                
+                                    </div>
+                                    
                             </li>
                             <li>
                                 <article class="uk-comment">
@@ -518,35 +531,17 @@
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true;">
 
                         <ul class="uk-slider-items uk-child-width-1-4" uk-lightbox="animation: scale">
-                            <li><a class="uk-inline" href="../img/adresnye/portfolio/DSCN2663.JPG" data-caption="Вот это счастье">
-                                    <img src="../img/adresnye/portfolio/DSCN2663.JPG" alt="Example image">
+                            <li><a class="uk-inline" href="../../img/pechat/portfolio/banner/2019091240.jpg" data-caption="Вот это счастье">
+                                    <img src="../../img/pechat/portfolio/banner/2019091240.jpg" alt="Example image">
                                 </a></li>
-                            <li><a class="uk-inline" href="../img/adresnye/portfolio/DSCN2664.JPG" data-caption="Надпись под изображением">
-                                    <img src="../img/adresnye/portfolio/DSCN2664.JPG" alt="Example image">
+                            <li><a class="uk-inline" href="../../img/pechat/portfolio/banner/2019091240.jpg" data-caption="Вот это счастье">
+                                    <img src="../../img/pechat/portfolio/banner/2019091240.jpg" alt="Example image">
                                 </a></li>
-                            <li><a class="uk-inline" href="../img/adresnye/portfolio/DSCN2682.JPG" data-caption="А вот и хорошо!">
-                                    <img src="../img/adresnye/portfolio/DSCN2682.JPG" alt="Example image">
-                                </a></li>
-                            <li><a class="uk-inline" href="../img/adresnye/portfolio/DSCN2685.JPG" data-caption="Вот это счастье">
-                                    <img src="../img/adresnye/portfolio/DSCN2685.JPG" alt="Example image">
-                                </a></li>
-                            <li><a class="uk-inline" href="../img/adresnye/portfolio/ilicha%20260.jpg" data-caption="Надпись под изображением">
-                                    <img src="../img/adresnye/portfolio/ilicha%20260.jpg" alt="Example image">
-                                </a></li>
-                            <li><a class="uk-inline" href="../img/adresnye/portfolio/molodezhnaya%2021.jpg" data-caption="А вот и хорошо!">
-                                    <img src="../img/adresnye/portfolio/molodezhnaya%2021.jpg" alt="Example image">
-                                </a></li>
-                            <li><a class="uk-inline" href="../img/adresnye/portfolio/moskovskaya%2010.jpg" data-caption="Вот это счастье">
-                                    <img src="../img/adresnye/portfolio/moskovskaya%2010.jpg" alt="Example image">
-                                </a></li>
-                            <li><a class="uk-inline" href="../img/adresnye/portfolio/mozyrskaja%2020.jpg" data-caption="Надпись под изображением">
-                                    <img src="../img/adresnye/portfolio/mozyrskaja%2020.jpg" alt="Example image">
-                                </a></li>
-                            <li><a class="uk-inline" href="../img/adresnye/portfolio/novoselkovaya%2044.jpg" data-caption="А вот и хорошо!">
-                                    <img src="../img/adresnye/portfolio/novoselkovaya%2044.jpg" alt="Example image">
-                                </a></li>
-                            <li><a class="uk-inline" href="../img/adresnye/portfolio/polevaya%20141.jpg" data-caption="Вот это счастье">
-                                    <img src="../img/adresnye/portfolio/polevaya%20141.jpg" alt="Example image">
+                            <li><a class="uk-inline" href="../../img/pechat/portfolio/banner/2019091240.jpg" data-caption="Вот это счастье">
+                                    <img src="../../img/pechat/portfolio/banner/2019091240.jpg" alt="Example image">
+                                </a></li>    
+                            <li><a class="uk-inline" href="../../img/pechat/portfolio/banner/2019091240.jpg" data-caption="Вот это счастье">
+                                    <img src="../../img/pechat/portfolio/banner/2019091240.jpg" alt="Example image">
                                 </a></li>
                         </ul>
                         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
@@ -560,9 +555,9 @@
                     <h3>Ответы на часто задаваемые вопросы</h3>
                     <ul uk-accordion="collapsible: false">
                         <li itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
-                            <a class="uk-accordion-title" href="#"><p itemprop="name">Какой тип таблички выбрать для офиса?</p></a>
+                            <a class="uk-accordion-title" href="#"><p itemprop="name">Как долго будут сохраниться баннеры?</p></a>
                             <div class="uk-accordion-content" itemscope itemprop="acceptedAnswer" itemtype="http://schema.org/Answer">
-                                <p itemprop="text">Это сильно зависит от вашего вкуса и от назначения вывесок. Вы можете получить акриловые таблички на дверях или знаки отделов. Для вашего офисного стола вы можете получить акриловые таблички или таблички с именами из оргстекла или настольные таблички для брошюр, документов или для чего-то еще. Буквы из плексигласа можно использовать для отображения названия бренда в офисе или для отображения рабочего времени. Акриловые знаки Perspex идеально подходят для отображения названия бренда рядом с входной дверью. Вы можете выбрать специальное решение для вывесок, которое наилучшим образом соответствует вашим потребностям.</p>
+                                <p itemprop="text">Все наши баннеры - могут прослужить от 2-5 лет без выцветания. Хорошие условия и надлежащий уход, конечно же, продлевают срок службы печати.</p>
                             </div>
                         </li>
                         
@@ -573,46 +568,40 @@
             <div id="recommend" class="uk-section uk-section-default">
                 <div class="uk-container">
                     <h3>СОПУТСТВУЮЩИЕ ТОВАРЫ</h3>
-                    <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match" uk-grid>
+                    <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-match" uk-grid>
 
-                        <a class="uk-link-toggle" href="../category/pechat.html">
-                            <div class="uk-card uk-card-default uk-card-hover">
+                        <a class="uk-link-toggle" href="../stendy/rollup.html">
+                            <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
                                     <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                                        <img class="uk-link-heading uk-transition-scale-up uk-transition-opaque" src="../../img/category/pechat.jpg" alt="">
+                                        <img class="uk-link-heading uk-transition-scale-up uk-transition-opaque" src="../../img/pechat/type/jpeg/lyuvers.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="uk-card-footer uk-background-primary">
-                                    <h3 class="uk-card-title">Широкоформатная печать</h3>
+                                <div class="uk-card-body uk-text-bold">
+                                    <h3 class="uk-card-title">Люверсы</h3>
+                                </div>
+                                <div class="uk-card-footer uk-background-warning">
+                                    <span>1 руб/шт</span>
                                 </div>
                             </div>
                         </a>
-
-                        <a class="uk-link-toggle" href="../../category/pos.html">
-                            <div class="uk-card uk-card-default uk-card-hover">
+                        
+                        <a class="uk-link-toggle" href="../stendy/rollup.html">
+                            <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
                                     <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                                        <img class="uk-link-heading uk-transition-scale-up uk-transition-opaque" src="../../img/category/pos.jpg" alt="">
+                                        <img class="uk-link-heading uk-transition-scale-up uk-transition-opaque" src="../../img/pechat/type/jpeg/plenka.jpg" alt="">
                                     </div>
                                 </div>
-                                <div class="uk-card-footer uk-background-primary">
-                                    <h3 class="uk-card-title">Ценникодержатели</h3>
+                                <div class="uk-card-body uk-text-bold">
+                                    <h3 class="uk-card-title">Наклейки</h3>
+                                </div>
+                                <div class="uk-card-footer uk-background-warning">
+                                    <span>от 15 руб/м2</span>
                                 </div>
                             </div>
                         </a>
-
-                        <a class="uk-link-toggle" href="../../category/tablichki.html">
-                            <div class="uk-card uk-card-default uk-card-hover">
-                                <div class="uk-card-media-top">
-                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                                        <img class="uk-link-heading uk-transition-scale-up uk-transition-opaque" src="../../img/category/tablichki.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="uk-card-footer uk-background-primary">
-                                    <h3 class="uk-card-title">Таблички</h3>
-                                </div>
-                            </div>
-                        </a>
+                        
                     </div>
                 </div>
             </div>
@@ -621,19 +610,6 @@
                 <div class="uk-container">
                     <h3>РЕКОМЕНДУЕМЫЕ КАТЕГОРИИ</h3>
                     <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-3@l uk-grid-match" uk-grid>
-
-                        <a class="uk-link-toggle" href="../category/pechat.html">
-                            <div class="uk-card uk-card-default uk-card-hover">
-                                <div class="uk-card-media-top">
-                                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                                        <img class="uk-link-heading uk-transition-scale-up uk-transition-opaque" src="../../img/category/pechat.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="uk-card-footer uk-background-primary">
-                                    <h3 class="uk-card-title">Широкоформатная печать</h3>
-                                </div>
-                            </div>
-                        </a>
 
                         <a class="uk-link-toggle" href="../../category/pos.html">
                             <div class="uk-card uk-card-default uk-card-hover">
