@@ -118,40 +118,42 @@
                                 <li><a href="../../contact.html">КОНТАКТЫ</a></li>
                                 <li><a href="../../about.html">О НАС</a></li>
                                 <li>
-                                    <a href="#modal-full" uk-toggle><button class="uk-button uk-margin-small-right" type="button" style="background-color: #F6BB19">ЗАКАЗАТЬ</button></a>
+                                    <a href="#" uk-toggle="target: #modal-close-default"><button class="uk-button uk-margin-small-right" type="button" style="background-color: #F6BB19">ЗАКАЗАТЬ</button></a>
                                     <div id="modal-full" class="uk-modal-full" uk-modal>
                                         <div class="uk-modal-dialog">
                                             <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-                                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                                <div class="uk-background-cover" style="background-image: url('../../img/about/tomas.jpg');" uk-height-viewport></div>
-                                                <div class="uk-padding-large">
-                                                    <form class="form_1 uk-width-1-2@m uk-margin-auto" action="" method="POST">
-                                                        <fieldset class="uk-fieldset">
-                                                            <legend class="uk-legend uk-text-center">Заголовок формы</legend>
+                                            <div class="uk-padding-large">
+                                                <form class="form_1 uk-width-1-2@m uk-margin-auto" action="contact-form.php" method="POST">
+                                                    <fieldset class="uk-fieldset">
+                                                        <legend class="uk-legend uk-text-center">Отправить сообщение</legend>
 
-                                                            <input type="hidden" name="Форма" value="1">
+                                                        <input type="hidden" name="Форма" value="1">
 
-                                                            <div class="uk-margin">
-                                                                <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
-                                                            </div>
-                                                            <div class="uk-margin uk-text-center">
-                                                                <button type="submit" class="uk-button uk-button-default">Отправить</button>
-                                                            </div>
-                                                        </fieldset>
-                                                    </form>
-                                                </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
+                                                        </div>
+
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="bezspama" type="text" placeholder="2+2*2" required>
+                                                        </div>
+
+                                                        <div class="uk-margin">
+                                                            <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
+                                                        </div>
+                                                        <div class="uk-margin uk-text-center">
+                                                            <button type="submit" class="uk-button uk-button-default">Отправить</button>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -549,42 +551,42 @@
                                 <p>Просто супер, руки растут откуда надо, все четко и качественно, молодцы, рекомендую всем! </p>
                             </div>
                         </article>
-                        <div class="uk-container">
-                            <a href="#modal-full" uk-toggle><button class="uk-button uk-margin-small-right" type="button">Оставить отзыв</button></a>
-                            <div id="modal-full" class="uk-modal-full" uk-modal>
-                                <div class="uk-modal-dialog">
-                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-                                    <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                        <div class="uk-background-cover" style="background-image: url('../../img/about/tomas.jpg');" uk-height-viewport></div>
-                                        <div class="uk-padding-large">
-                                            <form class="form_1 uk-width-1-2@m uk-margin-auto" action="" method="POST">
-                                                <fieldset class="uk-fieldset">
-                                                    <legend class="uk-legend uk-text-center">Заголовок формы</legend>
+                        <div>
+                            <button class="uk-button uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default">Оставить отзыв</button>
+                            <div id="modal-close-default" uk-modal>
+                                <div class="uk-modal-dialog uk-modal-body">
+                                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                                    <form class="form_1 uk-width-1-2@m uk-margin-auto" action="contact-form.php" method="POST">
+                                        <fieldset class="uk-fieldset">
+                                            <legend class="uk-legend uk-text-center">Отправить сообщение</legend>
 
-                                                    <input type="hidden" name="Форма" value="1">
+                                            <input type="hidden" name="Форма" value="1">
 
-                                                    <div class="uk-margin">
-                                                        <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
-                                                    </div>
-                                                    <div class="uk-margin">
-                                                        <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
-                                                    </div>
-                                                    <div class="uk-margin">
-                                                        <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
-                                                    </div>
-                                                    <div class="uk-margin">
-                                                        <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
-                                                    </div>
-                                                    <div class="uk-margin">
-                                                        <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
-                                                    </div>
-                                                    <div class="uk-margin uk-text-center">
-                                                        <button type="submit" class="uk-button uk-button-default">Отправить</button>
-                                                    </div>
-                                                </fieldset>
-                                            </form>
-                                        </div>
-                                    </div>
+                                            <div class="uk-margin">
+                                                <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
+                                            </div>
+                                            <div class="uk-margin">
+                                                <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
+                                            </div>
+                                            <div class="uk-margin">
+                                                <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
+                                            </div>
+                                            <div class="uk-margin">
+                                                <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
+                                            </div>
+
+                                            <div class="uk-margin">
+                                                <input class="uk-input" name="bezspama" type="text" placeholder="2+2*2" required>
+                                            </div>
+
+                                            <div class="uk-margin">
+                                                <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
+                                            </div>
+                                            <div class="uk-margin uk-text-center">
+                                                <button type="submit" class="uk-button uk-button-default">Отправить</button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
                                 </div>
                             </div>
                         </div>
