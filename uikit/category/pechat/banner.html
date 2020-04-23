@@ -393,14 +393,10 @@
             
             <div id="description" class="uk-section uk-section-muted">
                 <div class="uk-container">
-                    <div>
-                        <ul class="uk-subnav" uk-switcher>
-                            <li><a href="#"><p class="uk-h2">Описание</p></a></li>
-                            <li><a href="#"><p class="uk-h2">Отзывы</p></a></li>
-                        </ul>
-                        <ul class="uk-switcher uk-margin">
-                            <li uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
-                                    <div class="uk-panel">
+                    <h2>Описание</h2>
+                    <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
+                        <div>
+                            <div class="uk-panel">
                                     <img class="uk-align-center uk-align-right@m uk-margin-remove-adjacent" src="../../img/about/about.jpg" width="225" height="150" alt="Пример изображения">
                                     <p>Баннеры - любимая маркетинговая среда на все времена, позволяющая продвигать ваши товары или услуги с обеих сторон. Доступные в нестандартных размерах и дизайне, баннеры используются как для бизнеса, так и для личного использования.</p>
                                     <p>Распространите свое сообщение или украсьте свое мероприятие виниловыми баннерами, которые невозможно прогуливать. Мы предлагаем следующие типы баннеров: сетка, ткань или винил для внутреннего и наружного применения.</p>
@@ -445,84 +441,9 @@
                                     </p>
                                     <p>Часто это можно увидеть на спортивных стадионах с логотипом или девизом команды. Они широко используются в торговых центрах на задней стенке витрин, чтобы информировать о продажах или новой сезонной коллекции. </p>
                                     </div>
-                                    
-                            </li>
-                            <li>
-                                <article class="uk-comment">
-                                    <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <span uk-icon="icon: user; ratio: 2.5"></span>
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Покупатель 1</a></h4>
-                                            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                                <li><a href="#">09.01.19, 12:52</a></li>
-                                                <li><a href="#">Ответить</a></li>
-                                            </ul>
-                                        </div>
-                                    </header>
-                                    <div class="uk-comment-body">
-                                        <p>Отличная компания! Оперативность и качество исполнения работы на высоте!</p>
-                                    </div>
-                                </article>
-                                <hr class="uk-divider-small">
-                                <article class="uk-comment">
-                                    <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <span uk-icon="icon: user; ratio: 2.5"></span>
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Покупатель 2</a></h4>
-                                            <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                                                <li><a href="#">29.06.18, 14:36</a></li>
-                                                <li><a href="#">Ответить</a></li>
-                                            </ul>
-                                        </div>
-                                    </header>
-                                    <div class="uk-comment-body">
-                                        <p>Просто супер, руки растут откуда надо, все четко и качественно, молодцы, рекомендую всем! </p>
-                                    </div>
-                                </article>
-                                <div class="uk-container">
-                                    <p class="uk-h2">Оставить отзыв</p>
-                                    <form class="form_1 uk-width-1-1@m uk-margin-auto" action="contact-form.php" method="POST">
-                                        <fieldset class="uk-fieldset">
-                                            <legend class="uk-legend uk-text-center"></legend>
-
-                                            <input type="hidden" name="Форма" value="1">
-
-                                            <div class="uk-margin">
-                                                <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
-                                            </div>
-                                            <div class="uk-margin">
-                                                <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
-                                            </div>
-                                            <div class="uk-margin">
-                                                <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
-                                            </div>
-                                            <div class="uk-margin">
-                                                <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
-                                            </div>
-
-                                            <div class="uk-margin">
-                                                <input class="uk-input" name="bezspama" type="text" placeholder="2+2*2" required>
-                                            </div>
-
-                                            <div class="uk-margin">
-                                                <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
-                                            </div>
-                                            <div class="uk-margin uk-text-center">
-                                                <button type="submit" class="uk-button uk-button-default">Отправить</button>
-                                            </div>
-                                        </fieldset>
-                                    </form>
-                                </div>
-                
-                            </li>
-                        </ul>
+                        </div>
                     </div>
                 </div>
-                
             </div>
             
             <div id="example" class="uk-section uk-section-default">
@@ -565,7 +486,89 @@
                 </div>
             </div>
             
-            <div id="recommend" class="uk-section uk-section-default">
+            <div id="testimonial" class="uk-section uk-section-default">
+                <div class="uk-container">
+                    <h2>Отзывы</h2>
+                    <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
+                        <article class="uk-comment">
+                            <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <span uk-icon="icon: user; ratio: 2.5"></span>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Покупатель 1</a></h4>
+                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                        <li><a href="#">09.01.19, 12:52</a></li>
+                                        <li><a href="#">Ответить</a></li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <div class="uk-comment-body">
+                                <p>Отличная компания! Оперативность и качество исполнения работы на высоте!</p>
+                            </div>
+                        </article>
+                        <hr class="uk-divider-small">
+                        <article class="uk-comment">
+                            <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <span uk-icon="icon: user; ratio: 2.5"></span>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Покупатель 2</a></h4>
+                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                        <li><a href="#">29.06.18, 14:36</a></li>
+                                        <li><a href="#">Ответить</a></li>
+                                    </ul>
+                                </div>
+                            </header>
+                            <div class="uk-comment-body">
+                                <p>Просто супер, руки растут откуда надо, все четко и качественно, молодцы, рекомендую всем! </p>
+                            </div>
+                        </article>
+                        <div class="uk-container">
+                            <a href="#modal-full" uk-toggle><button class="uk-button uk-margin-small-right" type="button">Оставить отзыв</button></a>
+                            <div id="modal-full" class="uk-modal-full" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                                    <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                        <div class="uk-background-cover" style="background-image: url('../../img/about/tomas.jpg');" uk-height-viewport></div>
+                                        <div class="uk-padding-large">
+                                            <form class="form_1 uk-width-1-2@m uk-margin-auto" action="" method="POST">
+                                                <fieldset class="uk-fieldset">
+                                                    <legend class="uk-legend uk-text-center">Заголовок формы</legend>
+
+                                                    <input type="hidden" name="Форма" value="1">
+
+                                                    <div class="uk-margin">
+                                                        <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
+                                                    </div>
+                                                    <div class="uk-margin">
+                                                        <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
+                                                    </div>
+                                                    <div class="uk-margin">
+                                                        <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
+                                                    </div>
+                                                    <div class="uk-margin">
+                                                        <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
+                                                    </div>
+                                                    <div class="uk-margin">
+                                                        <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
+                                                    </div>
+                                                    <div class="uk-margin uk-text-center">
+                                                        <button type="submit" class="uk-button uk-button-default">Отправить</button>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="recommend" class="uk-section uk-section-muted">
                 <div class="uk-container">
                     <h3>СОПУТСТВУЮЩИЕ ТОВАРЫ</h3>
                     <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-match" uk-grid>
