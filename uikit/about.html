@@ -43,7 +43,7 @@
             <div id="contact" class="uk-navbar uk-background-muted uk-visible@m">
                 <div class="uk-container uk-navbar" uk-navbar>
                     <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav" itemscope itemtype="http://schema.org/LocalBusiness">
+                        <ul class="uk-navbar-nav" itemscope itemtype="http://schema.org/LocalBusiness" id="Рекламная-мастерская-ЛЕДНИК-в-Гомеле">
                             <li>
                                 <div class="uk-navbar-item">
                                     <div class=" uk-text-center">
@@ -52,10 +52,13 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                                 <div class="uk-navbar-item"><img src="img/icon/icon_mesto.png" class="uk-padding-small" alt="">
                                     <div>
-                                        <span class="uk-text-bold" itemprop="address">Гомель, ул. Шевченко</span>
+                                        <meta itemprop="addressRegion" content="Гомельская область">
+                                        <meta itemprop="addressCountry" content="Республика Беларусь">
+                                        <meta itemprop="postalCode" content="246028">
+                                        <span class="uk-text-bold" itemprop="addressLocality">Гомель</span>, <span itemprop="streetAddress">ул. Шевченко</span>
                                         <div class="uk-navbar-subtitle">(въезд в ГПК-9)</div>
                                     </div>
                                 </div>
@@ -77,6 +80,7 @@
                                     </div>
                                 </div>
                             </li>
+                            <meta itemprop="priceRange" content="$-$$$">
                         </ul>
                     </div>
                 </div>
