@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -31,16 +32,47 @@
     <!-- CSS, script -->
     <link rel="stylesheet" href="css/uikit.min.css">
     <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-    <!-- Yandex.Metrika counter --><script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(54198814,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0});</script><noscript><div><img src="https://mc.yandex.ru/watch/54198814" style="position:absolute; left:-9999px;" alt="Yandex.Metrika"/></div></noscript><!-- Global site tag(gtag.js)-Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-142725888-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
-    gtag('js',new Date());gtag('config','UA-142725888-1');</script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(54198814, "init", {
+            clickmap: !0,
+            trackLinks: !0,
+            accurateTrackBounce: !0,
+            webvisor: !0
+        });
+
+    </script><noscript>
+        <div><img src="https://mc.yandex.ru/watch/54198814" style="position:absolute; left:-9999px;" alt="Yandex.Metrika" /></div>
+    </noscript><!-- Global site tag(gtag.js)-Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142725888-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-142725888-1');
+
+    </script>
+    <script src="//code.jivosite.com/widget/RmZw0riFM1" async></script>
 </head>
+
 <body>
-   
+
     <div class="uk-offcanvas-content">
-       
+
         <header>
-           
+
             <div id="contact" class="uk-navbar uk-background-muted uk-visible@m">
                 <div class="uk-container uk-navbar" uk-navbar>
                     <div class="uk-navbar-right">
@@ -73,7 +105,8 @@
                             <li>
                                 <div class="uk-navbar-item"><img src="img/icon/icon_vremya.png" class="uk-padding-small" alt="">
                                     <div>
-                                        <div class="uk-text-bold"><meta itemprop="openingHours" content="пн-пт: 9:00-18:00">пн-пт: 9:00-18:00</div>
+                                        <div class="uk-text-bold">
+                                            <meta itemprop="openingHours" content="пн-пт: 9:00-18:00">пн-пт: 9:00-18:00</div>
                                         <div class="uk-navbar-subtitle">сб-вс: выходной</div>
                                     </div>
                                 </div>
@@ -115,50 +148,56 @@
                                 <li><a href="contact.html">КОНТАКТЫ</a></li>
                                 <li><a href="about.html">О НАС</a></li>
                                 <li>
-                                    <a href="#modal-full" uk-toggle><button class="uk-button uk-margin-small-right" type="button" style="background-color: #F6BB19">ЗАКАЗАТЬ</button></a>
-                                    <div id="modal-full" class="uk-modal-full" uk-modal>
-                                        <div class="uk-modal-dialog">
-                                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-                                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                                <div class="uk-background-cover" style="background-image: url('img/about/tomas.jpg');" uk-height-viewport></div>
-                                                <div class="uk-padding-large">
-                                                    <form class="form_1 uk-width-1-2@m uk-margin-auto" action="" method="POST">
-                                                        <fieldset class="uk-fieldset">
-                                                            <legend class="uk-legend uk-text-center">Заголовок формы</legend>
+                                    <a href="#">
+                                        <!-- This is a button toggling the modal with the default close button -->
+                                        <button class="uk-button uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default" style="background-color: #F6BB19">ЗАКАЗАТЬ</button>
+                                        <!-- Это кнопка переключения модального окна с кнопкой закрытия по умолчанию -->
+                                        <div id="modal-close-default" uk-modal>
+                                            <div class="uk-modal-dialog uk-modal-body">
+                                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                <form class="form_1 uk-width-1-2@m uk-margin-auto">
+                                                    <fieldset class="uk-fieldset">
+                                                        <legend class="uk-legend uk-text-center">Отправить сообщение</legend>
+                                                        <!-- Hidden Required Fields -->
+                                                        <input type="hidden" name="project_name" value="Рекламник">
+                                                        <input type="hidden" name="admin_email" value="3212254@gmail.com">
+                                                        <input type="hidden" name="form_subject" value="Главная">
+                                                        <!-- END Hidden Required Fields -->
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
+                                                        </div>
 
-                                                            <input type="hidden" name="Форма" value="1">
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="bezspama" type="text" placeholder="2+2*2" required>
+                                                        </div>
 
-                                                            <div class="uk-margin">
-                                                                <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
-                                                            </div>
-                                                            <div class="uk-margin uk-text-center">
-                                                                <button type="submit" class="uk-button uk-button-default">Отправить</button>
-                                                            </div>
-                                                        </fieldset>
-                                                    </form>
-                                                </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
+                                                        </div>
+                                                        <div class="uk-margin uk-text-center">
+                                                            <button type="submit" class="uk-button uk-button-default">Отправить</button>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
-            
+
             <div id="nav-offcanvas" uk-offcanvas="overlay: true" class="uk-offcanvas">
                 <aside class="uk-offcanvas-bar uk-padding-remove">
                     <div class="uk-card uk-card-small">
@@ -192,9 +231,9 @@
                     </div>
                 </aside>
             </div>
-            
+
             <div class="uk-sticky-placeholder" style="height: 61px; margin: 0px;" hidden=""></div>
-            
+
         </header>
 
         <main>
@@ -242,7 +281,7 @@
                     </div>
                 </div>
             </div-->
-            
+
             <div id="why2" class="uk-section uk-margin-remove uk-padding-remove uk-text-center uk-visible@s">
                 <div class="uk-container" style="padding: 5px">
                     <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-4@l" uk-grid>
@@ -281,18 +320,16 @@
                     </div>
                 </div>
             </div>
-            
+
             <div id="card" class="uk-section uk-text-bold">
                 <div class="uk-background-primary uk-light uk-padding-small">
                     <div class="uk-container">
                         <p class="uk-h4 ">ХИТЫ ПРОДАЖ</p>
                     </div>
                 </div>
-                
                 <div class="uk-container uk-margin-medium-top">
-                    <div class="uk-position-relative uk-visible-toggle uk-light uk-text-center" tabindex="-1"  uk-slider="autoplay: true">
+                    <div class="uk-position-relative uk-visible-toggle uk-light uk-text-center" tabindex="-1" uk-slider="autoplay: true">
                         <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid">
-
                             <li>
                                 <a class="uk-link-toggle" href="category/pechat/banner.html">
                                     <div class="uk-card uk-card-default">
@@ -310,9 +347,8 @@
                                     </div>
                                 </a>
                             </li>
-
                             <li>
-                                <a class="uk-link-toggle" href="category/stendy/stend.html">
+                                <a class="uk-link-toggle" href="category/stendy/nastennyy.html">
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-media-top">
                                             <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
@@ -328,9 +364,8 @@
                                     </div>
                                 </a>
                             </li>
-
                             <li>
-                                <a class="uk-link-toggle" href="category/stendy/shtender.html">
+                                <a class="uk-link-toggle" href="#">
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-media-top">
                                             <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
@@ -346,9 +381,8 @@
                                     </div>
                                 </a>
                             </li>
-
                             <li>
-                                <a class="uk-link-toggle" href="category/adresnye.html">
+                                <a class="uk-link-toggle" href="category/tablichki/adresnye.html">
                                     <div class="uk-card uk-card-default">
                                         <div class="uk-card-media-top">
                                             <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
@@ -364,21 +398,19 @@
                                     </div>
                                 </a>
                             </li>
-                            
                         </ul>
                         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
                         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
                     </div>
                 </div>
             </div>
-            
+
             <div id="material" class="uk-section">
                 <div class="uk-background-primary uk-light uk-padding-small">
                     <div class="uk-container">
                         <p class="uk-h4 ">РАБОТАЕМ ТОЛЬКО С КАЧЕСТВЕННЫМИ МАТЕРИАЛАМИ</p>
                     </div>
                 </div>
-
                 <div class="uk-container uk-margin-medium-top">
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true">
                         <ul class="uk-slider-items uk-child-width-1-4 uk-child-width-1-4@m">
@@ -391,42 +423,79 @@
                         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
                     </div>
                 </div>
-                
             </div>
-            
+
             <div id="portfolio" class="uk-section">
                 <div class="uk-background-primary uk-light uk-padding-small">
                     <div class="uk-container">
                         <p class="uk-h4 ">ПОРТФОЛИО</p>
                     </div>
                 </div>
-
                 <div class="uk-container uk-margin-medium-top">
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true;">
-                        <ul class="uk-slider-items uk-child-width-1-4">
-                            <li><img src="img/vyveski/svetovye/20191221-koreyanka3.jpg" alt="a5"></li>
-                            <li><img src="img/vyveski/svetovye/20200117-homenko.jpg" alt="belpochta"></li>
-                            <li><img src="img/vyveski/svetovye/20200213-chulki.jpg" alt="dana"></li>
-                            <li><img src="img/vyveski/svetovye/20200213-eurobum.jpg" alt="evrobum"></li>
-                            <li><img src="img/vyveski/svetovye/20200213-fon.jpg" alt="faeton"></li>
-                            <li><img src="img/vyveski/svetovye/20200213-kuhni2.jpg" alt="gibrid"></li>
-                            <li><img src="img/vyveski/svetovye/20200213-lombard.jpg" alt="koketka"></li>
-                            <li><img src="img/vyveski/svetovye/20200213-melochey.jpg" alt="koreyanka"></li>
-                            <li><img src="img/vyveski/svetovye/20200213-minimax.jpg" alt="kuhni"></li>
-                            <li><img src="img/vyveski/svetovye/20200213-sidak.jpg" alt="melston"></li>
-                        </ul><a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a><a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                        <ul class="uk-slider-items uk-child-width-1-4" uk-lightbox="animation: scale">
+                            <li><a class="uk-inline" href="img/vyveski/svetovye/webp/20191221-koreyanka3.webp" data-caption="Вот это счастье">
+                                    <img src="img/vyveski/svetovye/webp/20191221-koreyanka3.webp" alt="Example image">
+                                </a>
+                            </li>
+                            <li><a class="uk-inline" href="img/vyveski/svetovye/webp/20200117-homenko.webp" data-caption="Вот это счастье">
+                                    <img src="img/vyveski/svetovye/webp/20200117-homenko.webp" alt="Example image">
+                                </a>
+                            </li>
+                            <li><a class="uk-inline" href="img/vyveski/svetovye/webp/20200213-sidak.webp" data-caption="Вот это счастье">
+                                    <img src="img/vyveski/svetovye/webp/20200213-sidak.webp" alt="Example image">
+                                </a>
+                            </li>
+                            <li><a class="uk-inline" href="img/vyveski/svetovye/webp/20200214-minimax2.webp" data-caption="Вот это счастье">
+                                    <img src="img/vyveski/svetovye/webp/20200214-minimax2.webp" alt="Example image">
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
                     </div>
                 </div>
-                
             </div>
             
+            <div id="how-it-works" class="uk-section">
+                <div class="uk-background-primary uk-light uk-padding-small">
+                    <div class="uk-container">
+                        <p class="uk-h4 ">КАК МЫ РАБОТАЕМ</p>
+                    </div>
+                </div>
+                <div class="uk-container uk-margin-medium-top">
+                    <div class="uk-text-center">
+                        <ul class="uk-child-width-1-3 uk-child-width-1-3@m uk-grid">
+                            <li>
+                                <div class="uk-panel">
+                                    <img class="uk-align-center uk-margin-remove-adjacent" src="img/icon/how-it-works/select-a-product.svg" alt="Пример изображения">
+                                    <p class="uk-text-bold">1. Выберите продукт</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-panel">
+                                    <img class="uk-align-center uk-margin-remove-adjacent" src="img/icon/how-it-works/chat-bubble.svg" alt="Пример изображения">
+                                    <p class="uk-text-bold">2. Скажите нам, что вы хотите</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-panel">
+                                    <img class="uk-align-center uk-margin-remove-adjacent" src="img/icon/how-it-works/review.svg" alt="Пример изображения">
+                                    <p class="uk-text-bold">3. Посмотрите на результат</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><hr>
+                    <a class="uk-button  uk-light uk-width-1-1" href="https://www.canva.com/ru_ru/fotoredaktor/prilozhenie/" target="_blank" style="background-color: #4CAACA;">или попробуйте создать свой собственный дизайн</a>
+                </div>
+            </div>
+
             <div id="testimoniald" class="uk-section">
                 <div class="uk-background-primary uk-light uk-padding-small">
                     <div class="uk-container">
-                        <p class="uk-h4 ">В ЧИСЛЕ НАШИХ КЛИЕНТОВ</p>
+                        <p class="uk-h4 ">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</p>
                     </div>
                 </div>
-
                 <div class="uk-container uk-margin-medium-top">
                     <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="sets: true; autoplay: true">
                         <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@m">
@@ -480,17 +549,15 @@
                             </li>
                         </ul><a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a><a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
                     </div>
-
                 </div>
             </div>
-            
+
             <div id="client" class="uk-section">
                 <div class="uk-background-primary uk-light uk-padding-small">
                     <div class="uk-container">
                         <p class="uk-h4 ">В ЧИСЛЕ НАШИХ КЛИЕНТОВ</p>
                     </div>
                 </div>
-
                 <div class="uk-container uk-margin-medium-top">
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true">
                         <ul class="uk-slider-items uk-child-width-1-4 uk-child-width-1-6@m">
@@ -508,14 +575,13 @@
                     </div>
                 </div>
             </div>
-            
+
             <div id="map" class="uk-section uk-section-primary">
                 <div class="uk-container">
                     <p class="uk-h3">КАК НАС НАЙТИ</p>
                     <div>
                         <!-- Replace the value of the key parameter with your own API key. --><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1216.0642464470302!2d30.9892656!3d52.4405871!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d4696232a88e01%3A0x222e70dd581b8841!2z0KDQtdC60LvQsNC80L3QsNGPINC80LDRgdGC0LXRgNGB0LrQsNGPICLQm9C10LTQvdC40Loi!5e0!3m2!1sru!2sby!4v1586201410415!5m2!1sru!2sby" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
                 </div>
-
                 <div class="uk-container">
                     <h1>Рекламная мастерская Ледник — <strong> наружная реклама</strong> в Гомеле! Изготовление наружной рекламы</h1>
                     <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
@@ -525,7 +591,7 @@
                             <p>«Хорошим» агентством считается то, где в принципе есть квалифицированный медиабаинг. В подавляющем большинстве агентств нет даже его. Есть только отделы продаж. Ни о каком медиапланировании, творческом отделе, стратегическом планировании и так далее, речи вообще не идёт. Реклама замкнута не на разработку, а на перепродажу рекламных мест.</p>
                             <p>Такому откровенно удручающему состоянию рекламного рынка способствует не столько нежелание рекламных агентств развиваться, сколько типовая квалификация заказчика.</p>
                             <p>Работает простой принцип конкуренции — зачем тратить ресурсы агентства на квалифицированный персонал, если можно и так заработать денег с клиента, не делая ровным счётом ничего качественного?</p>
-                            
+
                             <p>В свою очередь вот уже на протяжении 10 лет мы создаем творческие решения для клиентов в Гомеле, Мозыре, Минске и по всей Беларуси, создавая <em> фирменную и недорогую</em> <b> наружную рекламу</b>, которая привлекает внимание. </p>
                             <p>Мы предлагаем полный ассортимент сделанных на заказ вывесок для удовлетворения любых потребностей от первых этапов проектирования до производства, установки и обслуживания. Наши собственные услуги включают в себя бесплатные дизайнерские услуги, широкоформатную печать и изготовление изделий из акрила. С 2010 года мы воплощаем свои замыслы без забот, проблем, суеты, задержек и оправданий.</p>
                             <p>Мы предлагаем услуги малым и крупным, местным и международным организациям.</p>
@@ -538,7 +604,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div id="post" class="uk-section">
                 <div class="uk-container">
                     <p class="uk-h3">ПОСЛЕДНИЕ СТАТЬИ</p>
@@ -547,7 +613,7 @@
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top"><img src="img/blog/1.jpg" alt="Нестандартная реклама"></div>
                                 <div class="uk-card-body uk-background-warning">
-                                    <h2 class="uk-card-title"><a class="uk-link-heading" href="blog/nestandartnaya_reklama.html">Нестандартная реклама</a></h2>
+                                    <h2 class="uk-card-title"><a class="uk-link-heading" href="#">Нестандартная реклама</a></h2>
                                     <p>Что такое «нестандартная реклама», когда она появилась впервые и в чем ее отличие от стандартной, плюсы и минусы такой рекламы, а также наиболее удачные примеры нестандартного креатива – ответы на эти вопросы вы найдете в данной статье. </p>
                                 </div>
                             </div>
@@ -555,7 +621,7 @@
                         <div>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-body">
-                                    <h2 class="uk-card-title"><a class="uk-link-heading" href="blog/naruzhnaya_reklama.html">Наружная реклама – мощное средство психологического воздействия</a></h2>
+                                    <h2 class="uk-card-title"><a class="uk-link-heading" href="#">Наружная реклама – мощное средство психологического воздействия</a></h2>
                                     <p>Для воздействия на человека наружная реклама использует психологические способы воздействия с целью привлечения его внимания для приобретения необходимого товара. </p>
                                 </div>
                                 <div class="uk-card-media-bottom"><img src="img/blog/2.jpg" alt="Наружная реклама"></div>
@@ -580,6 +646,7 @@
             </div>
             <img src="img/icon/footer.png" width="100%" alt="footer">
         </footer>
-    </div> 
+    </div>
 </body>
+
 </html>

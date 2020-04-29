@@ -1,0 +1,61 @@
+body {
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #2a2c36;
+    color: #d9dada;
+    overflow-x: hidden;
+    min-height: 100%;
+    position: relative;
+    font-display: swap;
+}
+
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5,
+.uk-h6,
+.uk-heading-2xlarge,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 20px 0;
+    font-family: 'Century Gothic';
+    font-weight: 400;
+    color: #d9dada;
+    text-transform: none
+}
+
+#footer {
+    padding-bottom: 0;
+}
+
+#header {
+    background-color: #141519;
+    padding: 0
+}
+
+#group p {
+    text-align: center;
+}
+
+#breadcrumb {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navmenu-nav {
+    list-style-type: none;
+}
+
+#present .uk-card-small {
+    padding-left: 40px
+}

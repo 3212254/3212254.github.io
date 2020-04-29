@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -31,10 +32,41 @@
     <!-- CSS, script -->
     <link rel="stylesheet" href="css/uikit.min.css">
     <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-    <!-- Yandex.Metrika counter --><script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(54198814,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0});</script><noscript><div><img src="https://mc.yandex.ru/watch/54198814" style="position:absolute; left:-9999px;" alt="Yandex.Metrika"/></div></noscript><!-- Global site tag(gtag.js)-Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-142725888-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
-    gtag('js',new Date());gtag('config','UA-142725888-1');</script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(54198814, "init", {
+            clickmap: !0,
+            trackLinks: !0,
+            accurateTrackBounce: !0,
+            webvisor: !0
+        });
+
+    </script><noscript>
+        <div><img src="https://mc.yandex.ru/watch/54198814" style="position:absolute; left:-9999px;" alt="Yandex.Metrika" /></div>
+    </noscript><!-- Global site tag(gtag.js)-Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142725888-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-142725888-1');
+
+    </script>
+    <script src="//code.jivosite.com/widget/RmZw0riFM1" async></script>
 </head>
+
 <body>
     <div class="uk-offcanvas-content">
 
@@ -72,7 +104,8 @@
                             <li>
                                 <div class="uk-navbar-item"><img src="img/icon/icon_vremya.png" class="uk-padding-small" alt="">
                                     <div>
-                                        <div class="uk-text-bold"><meta itemprop="openingHours" content="пн-пт: 9:00-18:00">пн-пт: 9:00-18:00</div>
+                                        <div class="uk-text-bold">
+                                            <meta itemprop="openingHours" content="пн-пт: 9:00-18:00">пн-пт: 9:00-18:00</div>
                                         <div class="uk-navbar-subtitle">сб-вс: выходной</div>
                                     </div>
                                 </div>
@@ -114,43 +147,49 @@
                                 <li><a href="contact.html">КОНТАКТЫ</a></li>
                                 <li><a href="about.html">О НАС</a></li>
                                 <li>
-                                    <a href="#modal-full" uk-toggle><button class="uk-button uk-margin-small-right" type="button" style="background-color: #F6BB19">ЗАКАЗАТЬ</button></a>
-                                    <div id="modal-full" class="uk-modal-full" uk-modal>
-                                        <div class="uk-modal-dialog">
-                                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-                                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                                                <div class="uk-background-cover" style="background-image: url('img/about/tomas.jpg');" uk-height-viewport></div>
-                                                <div class="uk-padding-large">
-                                                    <form class="form_1 uk-width-1-2@m uk-margin-auto" action="" method="POST">
-                                                        <fieldset class="uk-fieldset">
-                                                            <legend class="uk-legend uk-text-center">Заголовок формы</legend>
+                                    <a href="#">
+                                        <!-- This is a button toggling the modal with the default close button -->
+                                        <button class="uk-button uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default" style="background-color: #F6BB19">ЗАКАЗАТЬ</button>
+                                        <!-- Это кнопка переключения модального окна с кнопкой закрытия по умолчанию -->
+                                        <div id="modal-close-default" uk-modal>
+                                            <div class="uk-modal-dialog uk-modal-body">
+                                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                                <form class="form_1 uk-width-1-2@m uk-margin-auto">
+                                                    <fieldset class="uk-fieldset">
+                                                        <legend class="uk-legend uk-text-center">Отправить сообщение</legend>
+                                                        <!-- Hidden Required Fields -->
+                                                        <input type="hidden" name="project_name" value="Рекламник">
+                                                        <input type="hidden" name="admin_email" value="3212254@gmail.com">
+                                                        <input type="hidden" name="form_subject" value="Контакты">
+                                                        <!-- END Hidden Required Fields -->
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
+                                                        </div>
+                                                        <div class="uk-margin">
+                                                            <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
+                                                        </div>
 
-                                                            <input type="hidden" name="Форма" value="1">
+                                                        <div class="uk-margin">
+                                                            <input class="uk-input" name="bezspama" type="text" placeholder="2+2*2" required>
+                                                        </div>
 
-                                                            <div class="uk-margin">
-                                                                <input class="uk-input" name="Имя" type="text" placeholder="Имя" required>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <input class="uk-input" name="Телефон" type="tel" placeholder="Телефон" minlength="9" maxlength="16" required>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <input class="uk-input" name="E-mail" type="email" placeholder="E-mail" required>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <textarea class="uk-textarea" name="Сообщение" placeholder="Сообщение" rows="4"></textarea>
-                                                            </div>
-                                                            <div class="uk-margin">
-                                                                <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
-                                                            </div>
-                                                            <div class="uk-margin uk-text-center">
-                                                                <button type="submit" class="uk-button uk-button-default">Отправить</button>
-                                                            </div>
-                                                        </fieldset>
-                                                    </form>
-                                                </div>
+                                                        <div class="uk-margin">
+                                                            <input class="uk-checkbox uk-disabled" type="checkbox" checked value="да"> Согласен на обработку данных
+                                                        </div>
+                                                        <div class="uk-margin uk-text-center">
+                                                            <button type="submit" class="uk-button uk-button-default">Отправить</button>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
@@ -197,12 +236,16 @@
         </header>
 
         <main>
-            
+
             <div id="breadcrumb" class="uk-section uk-section-muted">
                 <div class="uk-container">
                     <ul class="uk-breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="index.html"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1" /></li>
-                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">Контакты</span><meta itemprop="position" content="2" /></li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="index.html"><span itemprop="name">Главная</span></a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">Контакты</span>
+                            <meta itemprop="position" content="2" />
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -221,8 +264,8 @@
                             <ul class="uk-list">
                                 <li itemscope itemtype="http://schema.org/Organization"><span itemprop="name"> Рекламная мастерская ЛЕДНИК </span></li>
                                 <li itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="postalCode"> 246028 </span>
-                                <span itemprop="addressLocality"> г. Гомель </span>
-                                <span itemprop="streetAddress"> ул. Старо-Черниговская, 15/150</span></li>
+                                    <span itemprop="addressLocality"> г. Гомель </span>
+                                    <span itemprop="streetAddress"> ул. Старо-Черниговская, 15/150</span></li>
                                 <li itemscope itemptype="http://schema.org/PropertyValue"><span itemprop="propertyID">УНП</span>:<span itemprop="value">491239855</span></li>
                                 <li>р/с: BY34 BPSB 3013 1783 8301 0933 0000 <br>ОАО «БПС-Сбербанк» г. Гомель, ул. Крестьянская, 29а <br>БИК BPSBBY2X</li>
                             </ul>
@@ -279,4 +322,5 @@
         </footer>
     </div>
 </body>
+
 </html>

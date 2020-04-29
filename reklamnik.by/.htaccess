@@ -1,0 +1,27 @@
+ErrorDocument 404 /404.html
+
+AddDefaultCharset UTF-8
+
+#сжатие text, html, javascript, css, xml:
+<ifModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+</ifModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType application/javascript "access plus 5 days"
+ExpiresByType text/javascript "access plus 5 days"
+ExpiresByType text/css "access plus 5 days"
+ExpiresByType image/gif "access plus 5 days"
+ExpiresByType image/jpeg "access plus 5 days"
+ExpiresByType image/png "access plus 5 days"
+ExpiresByType image/webp "access plus 5 days"
+</IfModule>
+
+RewriteCond %{THE_REQUEST} ^GET\ .*/index\.(php|html)\ HTTP
+RewriteRule ^(.*)index\.(php|html)$ /$1 [R=301,L] 
+
+RewriteEngine on
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.reklamnik.by
+RewriteRule (.*) https://reklamnik.by/$1 [R=301,L] 
